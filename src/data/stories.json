@@ -1,0 +1,1167 @@
+[
+  {
+    "_id": "1",
+    "name": "Echoes of the Forgotten",
+    "slug": "echoes-of-the-forgotten",
+    "description": "A haunting tale of memories lost to time and rediscovered by the brave.",
+    "about": [
+      "Set in an ancient village abandoned by history.",
+      "Explores themes of memory, identity, and redemption.",
+      "A poetic journey through shadows and light."
+    ],
+    "preview": [
+      "Whispers in the wind carry the voices of those who once lived here...",
+      "A lone wanderer uncovers secrets buried deep beneath the ruins."
+    ],
+    "content": [
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days...",
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days...",
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days...",
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days...",
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days...",
+      "The village lay silent, save for the rustling leaves and distant echoes...",
+      "Time had wrapped its fingers around the crumbling stones, guarding its stories.",
+      "She stepped cautiously, each footfall stirring the dust of forgotten days..."
+    ],
+    "genre": ["Mystery", "Drama", "Fantasy"],
+    "coverImage": "/images/echoes-cover.jpg",
+    "createdAt": "2023-08-12T00:00:00.000Z"
+  },
+  {
+    "_id": "2",
+    "name": "Whispers of the Old Forest",
+    "slug": "whispers-of-the-old-forest",
+    "description": "An ethereal narrative where the forest speaks through the rustling leaves.",
+    "about": [
+      "A magical realist story weaving nature's secrets with human longing.",
+      "Themes of connection, loss, and the unseen world.",
+      "Rich with lush descriptions and lyrical prose."
+    ],
+    "preview": [
+      "The ancient trees stood tall, their leaves whispering secrets only the wind could carry.",
+      "In the heart of the forest, a young girl finds a voice she never knew she had."
+    ],
+    "content": [
+      "Branches intertwined like the threads of forgotten tales...",
+      "Every step was a dance with shadows, every breath a hymn of life.",
+      "The forest was alive — not just with animals, but with stories waiting to be heard..."
+    ],
+    "genre": ["Fantasy", "Magical Realism", "Adventure"],
+    "coverImage": "/images/old-forest-cover.jpg",
+    "createdAt": "2023-09-01T00:00:00.000Z"
+  },
+  {
+    "_id": "3",
+    "name": "The Last Ember",
+    "slug": "the-last-ember",
+    "description": "A fiery saga of survival and hope amidst the ashes of a fallen world.",
+    "about": [
+      "Post-apocalyptic setting with intense emotional arcs.",
+      "Themes of resilience, sacrifice, and the spark of humanity.",
+      "A gritty tale burning with raw passion."
+    ],
+    "preview": [
+      "Ash fell like snow, blanketing the world in silence.",
+      "From the glowing embers, a new light dared to emerge."
+    ],
+    "content": [
+      "The air was thick with smoke and the scent of lost dreams...",
+      "He clutched the ember, his last hope against the encroaching dark.",
+      "In the ruins, the fight for tomorrow was just beginning..."
+    ],
+    "genre": ["Post-Apocalyptic", "Drama", "Adventure"],
+    "coverImage": "/images/last-ember-cover.jpg",
+    "createdAt": "2023-10-05T00:00:00.000Z"
+  },
+  {
+    "_id": "4",
+    "name": "Beneath the Silver Moon",
+    "slug": "beneath-the-silver-moon",
+    "description": "A mystical romance under the glow of an enchanted lunar sky.",
+    "about": [
+      "Explores forbidden love and ancient magic.",
+      "Themes of destiny, sacrifice, and celestial wonders.",
+      "A tender yet powerful narrative woven with moonlight."
+    ],
+    "preview": [
+      "Under the silver moon, two souls found each other against all odds.",
+      "Magic shimmered softly in the cool night air."
+    ],
+    "content": [
+      "The moon cast its gentle glow upon the quiet lake...",
+      "Her heart beat in rhythm with the tides, a silent song of longing.",
+      "Stars blinked knowingly, witnesses to a love both fragile and fierce."
+    ],
+    "genre": ["Romance", "Fantasy", "Mystery"],
+    "coverImage": "/images/silver-moon-cover.jpg",
+    "createdAt": "2023-11-20T00:00:00.000Z"
+  },
+  {
+    "_id": "5",
+    "name": "The Clockmaker’s Paradox",
+    "slug": "the-clockmakers-paradox",
+    "description": "A mind-bending journey through time’s twists and turns.",
+    "about": [
+      "A science fiction thriller with philosophical undertones.",
+      "Themes of time, choice, and consequence.",
+      "Complex characters trapped in temporal enigmas."
+    ],
+    "preview": [
+      "Time slipped like sand through the hands of the clockmaker.",
+      "Every tick was a question, every tock an answer yet to be found."
+    ],
+    "content": [
+      "In his workshop, gears and springs danced in mechanical harmony...",
+      "He pondered the paradox — was time a path or a circle?",
+      "Each moment held a universe of possibilities and regrets."
+    ],
+    "genre": ["Science Fiction", "Thriller", "Philosophy"],
+    "coverImage": "/images/clockmaker-cover.jpg",
+    "createdAt": "2024-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "6",
+    "name": "Songs of the Forgotten Sea",
+    "slug": "songs-of-the-forgotten-sea",
+    "description": "A lyrical voyage across the waves where ancient melodies echo.",
+    "about": [
+      "A poetic exploration of loss and longing by the sea.",
+      "Themes of memory, nature, and the eternal song of the ocean.",
+      "Deeply immersive with vivid sensory details."
+    ],
+    "preview": [
+      "The sea sang its sorrow, a haunting lullaby lost to time.",
+      "Waves whispered secrets only the brave dared to hear."
+    ],
+    "content": [
+      "Salt kissed the air as the ship drifted into the unknown...",
+      "Her voice rose with the tide, weaving tales of forgotten lands.",
+      "Beneath the surface, mysteries slept in quiet repose."
+    ],
+    "genre": ["Poetry", "Adventure", "Fantasy"],
+    "coverImage": "/images/forgotten-sea-cover.jpg",
+    "createdAt": "2024-02-10T00:00:00.000Z"
+  },
+  {
+    "_id": "7",
+    "name": "Veil of Shadows",
+    "slug": "veil-of-shadows",
+    "description": "A dark fantasy where secrets and betrayal twist through the night.",
+    "about": [
+      "A tale of power, deception, and the cost of ambition.",
+      "Themes of trust, darkness, and redemption.",
+      "Suspenseful, atmospheric, and emotionally charged."
+    ],
+    "preview": [
+      "In the shadows, nothing was as it seemed.",
+      "Every whispered word was a blade in disguise."
+    ],
+    "content": [
+      "The city’s alleys writhed with unseen dangers...",
+      "She moved like a ghost, her past trailing like a veil.",
+      "Every secret uncovered threatened to unravel her very soul."
+    ],
+    "genre": ["Dark Fantasy", "Thriller", "Mystery"],
+    "coverImage": "/images/veil-shadows-cover.jpg",
+    "createdAt": "2024-03-22T00:00:00.000Z"
+  },
+  {
+    "_id": "8",
+    "name": "Fragments of a Distant Star",
+    "slug": "fragments-of-a-distant-star",
+    "description": "A sci-fi odyssey through space and the shards of forgotten dreams.",
+    "about": [
+      "Explores isolation, hope, and the vastness of the cosmos.",
+      "Themes of survival, discovery, and cosmic wonder.",
+      "Imaginative and thought-provoking."
+    ],
+    "preview": [
+      "Stars glittered cold and distant in the endless void.",
+      "She drifted among the fragments, searching for meaning."
+    ],
+    "content": [
+      "The ship’s hull creaked against the silent vacuum...",
+      "Memories flickered like distant constellations in her mind.",
+      "Each fragment held a story waiting to be told."
+    ],
+    "genre": ["Science Fiction", "Adventure", "Drama"],
+    "coverImage": "/images/distant-star-cover.jpg",
+    "createdAt": "2024-04-05T00:00:00.000Z"
+  },
+  {
+    "_id": "9",
+    "name": "The Glass Garden",
+    "slug": "the-glass-garden",
+    "description": "A surreal exploration of beauty and fragility beneath transparent skies.",
+    "about": [
+      "A magical realist story blending nature and human emotion.",
+      "Themes of fragility, growth, and transformation.",
+      "Visual and sensory storytelling at its finest."
+    ],
+    "preview": [
+      "Glass petals shimmered in the pale light.",
+      "The garden held secrets in its fragile blooms."
+    ],
+    "content": [
+      "Sunlight fractured through crystal leaves...",
+      "She tended the garden with reverent care, each plant a delicate hope.",
+      "Beauty was both a gift and a curse in this world of glass."
+    ],
+    "genre": ["Magical Realism", "Drama", "Fantasy"],
+    "coverImage": "/images/glass-garden-cover.jpg",
+    "createdAt": "2024-05-18T00:00:00.000Z"
+  },
+  {
+    "_id": "10",
+    "name": "Chronicles of the Hidden Realm",
+    "slug": "chronicles-of-the-hidden-realm",
+    "description": "Epic adventures and ancient mysteries unfold in a secret world beyond sight.",
+    "about": [
+      "A sweeping fantasy saga full of magic, intrigue, and heroism.",
+      "Themes of destiny, friendship, and the battle between light and dark.",
+      "Richly detailed and immersive."
+    ],
+    "preview": [
+      "The hidden realm waited, cloaked in mist and legend.",
+      "Heroes rose where shadows dared to tread."
+    ],
+    "content": [
+      "Mountains rose like ancient guardians around the realm...",
+      "Prophecies whispered through the wind, guiding those brave enough to listen.",
+      "Every step carried the weight of countless generations."
+    ],
+    "genre": ["Fantasy", "Adventure", "Epic"],
+    "coverImage": "/images/hidden-realm-cover.jpg",
+    "createdAt": "2024-06-30T00:00:00.000Z"
+  },
+  {
+    "_id": "11",
+    "name": "Veins of the Earth",
+    "slug": "veins-of-the-earth",
+    "description": "A subterranean odyssey where ancient secrets pulse beneath the soil.",
+    "about": [
+      "Explores humanity’s bond with the earth’s deep, hidden power.",
+      "Themes of heritage, nature’s wrath, and renewal.",
+      "A richly textured narrative wrapped in earthy tones."
+    ],
+    "preview": [
+      "Roots twisted through darkness, carrying whispers of forgotten civilizations.",
+      "Beneath the surface, the earth breathed a slow, ancient rhythm."
+    ],
+    "content": [
+      "The tunnel walls shimmered with minerals, alive with latent energy...",
+      "He traced the veins of stone, feeling the pulse of time itself.",
+      "In the depths, mysteries stirred that could reshape the world above."
+    ],
+    "genre": ["Adventure", "Fantasy", "Mystery"],
+    "coverImage": "/images/veins-earth-cover.jpg",
+    "createdAt": "2024-07-12T00:00:00.000Z"
+  },
+  {
+    "_id": "12",
+    "name": "The Painted Veil",
+    "slug": "the-painted-veil",
+    "description": "An enigmatic tale where art conceals as much as it reveals.",
+    "about": [
+      "Delves into themes of perception, illusion, and identity.",
+      "Explores how beauty masks deeper truths.",
+      "A haunting story woven with surreal imagery."
+    ],
+    "preview": [
+      "Colors bled into shadows, blurring the line between reality and dreams.",
+      "The canvas hid secrets no eye could see at first glance."
+    ],
+    "content": [
+      "Brushstrokes whispered silent confessions...",
+      "Every hue was a clue, every line a puzzle piece.",
+      "She gazed long, unraveling the layers beneath the painted veil."
+    ],
+    "genre": ["Mystery", "Psychological", "Drama"],
+    "coverImage": "/images/painted-veil-cover.jpg",
+    "createdAt": "2024-07-25T00:00:00.000Z"
+  },
+  {
+    "_id": "13",
+    "name": "Storms of the Mind",
+    "slug": "storms-of-the-mind",
+    "description": "A psychological thriller exploring the tempest within.",
+    "about": [
+      "Focuses on inner conflict and mental resilience.",
+      "Themes of identity, trauma, and healing.",
+      "Intense, gripping narrative with twists and revelations."
+    ],
+    "preview": [
+      "Lightning flashed through the corridors of memory.",
+      "Every thought was a thunderclap, every fear a dark cloud."
+    ],
+    "content": [
+      "Her mind was a battlefield, storms raging with no end in sight...",
+      "Fragments of truth collided with shadows of doubt.",
+      "In the chaos, she sought a fragile calm."
+    ],
+    "genre": ["Thriller", "Psychological", "Drama"],
+    "coverImage": "/images/storms-mind-cover.jpg",
+    "createdAt": "2024-08-10T00:00:00.000Z"
+  },
+  {
+    "_id": "14",
+    "name": "Lanterns in the Mist",
+    "slug": "lanterns-in-the-mist",
+    "description": "A mystical journey guided by light through a veil of uncertainty.",
+    "about": [
+      "Themes of hope, guidance, and the unknown.",
+      "A poetic exploration of faith and courage.",
+      "Atmospheric storytelling full of symbolism."
+    ],
+    "preview": [
+      "Faint lights flickered in the endless mist, promising safe passage.",
+      "She followed the lanterns, her heart a compass in the fog."
+    ],
+    "content": [
+      "The mist swallowed the path, but the lanterns held steady...",
+      "Each glow was a story, each step a leap of faith.",
+      "In the haze, truths shimmered like distant stars."
+    ],
+    "genre": ["Fantasy", "Adventure", "Poetry"],
+    "coverImage": "/images/lanterns-mist-cover.jpg",
+    "createdAt": "2024-08-22T00:00:00.000Z"
+  },
+  {
+    "_id": "15",
+    "name": "Fragments of the Past",
+    "slug": "fragments-of-the-past",
+    "description": "A historical mystery piecing together echoes of forgotten lives.",
+    "about": [
+      "Unravels family secrets across generations.",
+      "Themes of memory, identity, and reconciliation.",
+      "Rich in historical detail and emotional depth."
+    ],
+    "preview": [
+      "Old letters surfaced like ghosts from a dusty trunk.",
+      "Each fragment told a story of love, loss, and hope."
+    ],
+    "content": [
+      "She traced the faded ink, feeling the weight of years...",
+      "Stories unfolded like petals, fragile and poignant.",
+      "In the past, she found the keys to her future."
+    ],
+    "genre": ["Historical", "Mystery", "Drama"],
+    "coverImage": "/images/fragments-past-cover.jpg",
+    "createdAt": "2024-09-05T00:00:00.000Z"
+  },
+  {
+    "_id": "16",
+    "name": "The Serpent’s Gift",
+    "slug": "the-serpents-gift",
+    "description": "A dark fantasy where power comes at a deadly price.",
+    "about": [
+      "Explores temptation, corruption, and redemption.",
+      "Themes of magic, sacrifice, and fate.",
+      "Atmospheric and haunting."
+    ],
+    "preview": [
+      "The serpent’s eyes gleamed with ancient knowledge.",
+      "A gift that promised power — and peril."
+    ],
+    "content": [
+      "Darkness curled around her like a living thing...",
+      "Each choice twisted deeper into the web of destiny.",
+      "Power was a venom, beautiful and fatal."
+    ],
+    "genre": ["Dark Fantasy", "Drama", "Mystery"],
+    "coverImage": "/images/serpent-gift-cover.jpg",
+    "createdAt": "2024-09-20T00:00:00.000Z"
+  },
+  {
+    "_id": "17",
+    "name": "Celestial Drift",
+    "slug": "celestial-drift",
+    "description": "A cosmic voyage where stars guide lost souls.",
+    "about": [
+      "Themes of exploration, fate, and the infinite.",
+      "A meditative sci-fi journey beyond known horizons.",
+      "Visually evocative with a dreamy tone."
+    ],
+    "preview": [
+      "Stars pulsed with ancient light, mapping paths unknown.",
+      "She drifted among constellations, searching for home."
+    ],
+    "content": [
+      "The void stretched endlessly, a canvas of possibility...",
+      "Each star was a beacon, a story waiting to be told.",
+      "In the silence, she found a voice beyond words."
+    ],
+    "genre": ["Science Fiction", "Adventure", "Philosophy"],
+    "coverImage": "/images/celestial-drift-cover.jpg",
+    "createdAt": "2024-10-02T00:00:00.000Z"
+  },
+  {
+    "_id": "18",
+    "name": "The Painted Garden",
+    "slug": "the-painted-garden",
+    "description": "A tale of creation and decay within a surreal botanical sanctuary.",
+    "about": [
+      "Themes of beauty, impermanence, and transformation.",
+      "Blends magical realism with vivid natural imagery.",
+      "Emotional and evocative prose."
+    ],
+    "preview": [
+      "Flowers bloomed in impossible colors, a painter’s dream come alive.",
+      "The garden was a living canvas, forever changing."
+    ],
+    "content": [
+      "Petals shimmered with dew, catching the first light...",
+      "Each bloom held a secret, each leaf a memory.",
+      "In the garden’s heart, life and art intertwined endlessly."
+    ],
+    "genre": ["Magical Realism", "Drama", "Fantasy"],
+    "coverImage": "/images/painted-garden-cover.jpg",
+    "createdAt": "2024-10-15T00:00:00.000Z"
+  },
+  {
+    "_id": "19",
+    "name": "Echoes of Silence",
+    "slug": "echoes-of-silence",
+    "description": "A contemplative journey into the spaces between sound and thought.",
+    "about": [
+      "Explores silence as a powerful force.",
+      "Themes of mindfulness, introspection, and peace.",
+      "Lyrical and meditative."
+    ],
+    "preview": [
+      "Silence spoke louder than words ever could.",
+      "In the quiet, truths revealed themselves softly."
+    ],
+    "content": [
+      "The stillness wrapped around her like a gentle embrace...",
+      "Each moment of silence was a breath of clarity.",
+      "In the void, she found her own voice."
+    ],
+    "genre": ["Poetry", "Philosophy", "Drama"],
+    "coverImage": "/images/echoes-silence-cover.jpg",
+    "createdAt": "2024-11-01T00:00:00.000Z"
+  },
+  {
+    "_id": "20",
+    "name": "The Wanderer’s Tale",
+    "slug": "the-wanderers-tale",
+    "description": "An epic journey of self-discovery across vast, untamed lands.",
+    "about": [
+      "Themes of freedom, courage, and transformation.",
+      "A sweeping narrative of adventure and heart.",
+      "Rich world-building and unforgettable characters."
+    ],
+    "preview": [
+      "The road stretched endlessly beneath a sky painted with stars.",
+      "He carried only a pack and a heart full of dreams."
+    ],
+    "content": [
+      "Mountains called, rivers sang, and deserts whispered secrets...",
+      "Every horizon promised a new beginning.",
+      "The wanderer’s footsteps wrote stories across the earth."
+    ],
+    "genre": ["Adventure", "Fantasy", "Epic"],
+    "coverImage": "/images/wanderers-tale-cover.jpg",
+    "createdAt": "2024-11-15T00:00:00.000Z"
+  },
+  {
+    "_id": "21",
+    "name": "Whispers in the Glass",
+    "slug": "whispers-in-the-glass",
+    "description": "A haunting narrative where reflections reveal hidden truths.",
+    "about": [
+      "Explores the blurred lines between reality and illusion.",
+      "Themes of identity, secrets, and self-discovery.",
+      "A suspenseful journey through fractured mirrors."
+    ],
+    "preview": [
+      "The glass shimmered with shadows, whispering forgotten stories.",
+      "Every reflection held a secret waiting to be unveiled."
+    ],
+    "content": [
+      "She stared into the mirror, but the image stared back with a life of its own...",
+      "Cracks in the glass mapped the fractures within her soul.",
+      "The whispers grew louder as she embraced the unknown."
+    ],
+    "genre": ["Mystery", "Psychological", "Thriller"],
+    "coverImage": "/images/whispers-glass-cover.jpg",
+    "createdAt": "2024-11-28T00:00:00.000Z"
+  },
+  {
+    "_id": "22",
+    "name": "Ashes of Tomorrow",
+    "slug": "ashes-of-tomorrow",
+    "description": "A dystopian tale of hope flickering amidst ruin.",
+    "about": [
+      "Explores survival, resistance, and rebirth.",
+      "Themes of sacrifice and human resilience.",
+      "A gritty, immersive narrative with stark contrasts."
+    ],
+    "preview": [
+      "The city lay in ruins, shadows of what once was.",
+      "Amidst the ashes, a spark of defiance burned bright."
+    ],
+    "content": [
+      "Smoke curled against the sky as the last light faded...",
+      "Her footsteps echoed on cracked concrete, a promise to fight.",
+      "In the darkest hour, hope became a weapon."
+    ],
+    "genre": ["Dystopian", "Drama", "Adventure"],
+    "coverImage": "/images/ashes-tomorrow-cover.jpg",
+    "createdAt": "2024-12-05T00:00:00.000Z"
+  },
+  {
+    "_id": "23",
+    "name": "Echoes of the Forest",
+    "slug": "echoes-of-the-forest",
+    "description": "A mystical journey where nature’s voice guides the lost.",
+    "about": [
+      "Themes of harmony, loss, and spiritual awakening.",
+      "A lyrical blend of fantasy and environmental reflection.",
+      "Rich sensory descriptions and emotional depth."
+    ],
+    "preview": [
+      "Leaves rustled with ancient songs, carrying messages on the wind.",
+      "The forest breathed in rhythm with her heartbeat."
+    ],
+    "content": [
+      "Branches wove a tapestry of light and shadow...",
+      "She listened to the whispers of trees, learning forgotten lore.",
+      "The forest’s echo was a balm for her weary soul."
+    ],
+    "genre": ["Fantasy", "Adventure", "Spiritual"],
+    "coverImage": "/images/echoes-forest-cover.jpg",
+    "createdAt": "2024-12-15T00:00:00.000Z"
+  },
+  {
+    "_id": "24",
+    "name": "The Clockmaker’s Paradox",
+    "slug": "clockmakers-paradox",
+    "description": "A mind-bending tale where time twists and unravels.",
+    "about": [
+      "Explores the nature of time, causality, and destiny.",
+      "Themes of invention, loss, and paradox.",
+      "A cerebral narrative with intricate plot mechanics."
+    ],
+    "preview": [
+      "Gears turned in endless loops, weaving fate’s fragile web.",
+      "Time fractured beneath the clockmaker’s touch."
+    ],
+    "content": [
+      "Every tick echoed with possibility and peril...",
+      "He chased moments slipping like sand through his fingers.",
+      "In the paradox, the past and future collided."
+    ],
+    "genre": ["Science Fiction", "Mystery", "Thriller"],
+    "coverImage": "/images/clockmaker-paradox-cover.jpg",
+    "createdAt": "2024-12-22T00:00:00.000Z"
+  },
+  {
+    "_id": "25",
+    "name": "Silent Symphony",
+    "slug": "silent-symphony",
+    "description": "An evocative exploration of sound and absence.",
+    "about": [
+      "Themes of music, loss, and rediscovery.",
+      "A poetic narrative blending silence and melody.",
+      "Emotionally resonant and deeply introspective."
+    ],
+    "preview": [
+      "Notes hung suspended in the air, a silent symphony unfolding.",
+      "The absence of sound revealed hidden harmonies."
+    ],
+    "content": [
+      "She traced the vibrations she could no longer hear...",
+      "Music lived in the spaces between silence and sound.",
+      "In stillness, she found a symphony of her own making."
+    ],
+    "genre": ["Drama", "Poetry", "Philosophy"],
+    "coverImage": "/images/silent-symphony-cover.jpg",
+    "createdAt": "2025-01-05T00:00:00.000Z"
+  },
+  {
+    "_id": "26",
+    "name": "Beneath the Silver Moon",
+    "slug": "beneath-the-silver-moon",
+    "description": "A mystical romance bathed in lunar light.",
+    "about": [
+      "Themes of love, destiny, and transformation.",
+      "A dreamy narrative with ethereal beauty.",
+      "A tale woven with moonlit magic and longing."
+    ],
+    "preview": [
+      "The silver moon cast shadows that danced like whispers.",
+      "Their hearts beat in time with the moon’s soft glow."
+    ],
+    "content": [
+      "Beneath the moonlight, promises shimmered like stars...",
+      "She felt the pull of ancient tides and timeless love.",
+      "In his arms, the night became an endless dream."
+    ],
+    "genre": ["Romance", "Fantasy", "Drama"],
+    "coverImage": "/images/silver-moon-cover.jpg",
+    "createdAt": "2025-01-18T00:00:00.000Z"
+  },
+  {
+    "_id": "27",
+    "name": "The Alchemist’s Secret",
+    "slug": "alchemists-secret",
+    "description": "A quest for immortality entwined with betrayal and wisdom.",
+    "about": [
+      "Explores ambition, sacrifice, and enlightenment.",
+      "Themes of magic, science, and moral complexity.",
+      "A richly layered, suspenseful narrative."
+    ],
+    "preview": [
+      "The elixir shimmered with promises beyond death.",
+      "Secrets whispered in the crucible’s glow."
+    ],
+    "content": [
+      "He sought the philosopher’s stone, risking all...",
+      "Each formula brought him closer to revelation or ruin.",
+      "In the quest, he faced shadows of his own soul."
+    ],
+    "genre": ["Fantasy", "Adventure", "Mystery"],
+    "coverImage": "/images/alchemist-secret-cover.jpg",
+    "createdAt": "2025-02-02T00:00:00.000Z"
+  },
+  {
+    "_id": "28",
+    "name": "Threads of Destiny",
+    "slug": "threads-of-destiny",
+    "description": "A woven tapestry of lives interconnected by fate.",
+    "about": [
+      "Themes of chance, connection, and purpose.",
+      "Narrative unfolds through multiple perspectives.",
+      "Complex, interlaced storytelling rich in emotion."
+    ],
+    "preview": [
+      "Lives intertwined like threads in an eternal fabric.",
+      "Destiny pulled strings no one could see."
+    ],
+    "content": [
+      "Each thread told a story, each knot a turning point...",
+      "Paths crossed in moments both fleeting and profound.",
+      "Together, they wove a pattern only time could reveal."
+    ],
+    "genre": ["Drama", "Fantasy", "Philosophy"],
+    "coverImage": "/images/threads-destiny-cover.jpg",
+    "createdAt": "2025-02-15T00:00:00.000Z"
+  },
+  {
+    "_id": "29",
+    "name": "The Forgotten Lighthouse",
+    "slug": "forgotten-lighthouse",
+    "description": "A ghostly tale of light lost and memories found.",
+    "about": [
+      "Themes of solitude, memory, and redemption.",
+      "A haunting narrative set against the relentless sea.",
+      "Atmospheric and deeply emotional."
+    ],
+    "preview": [
+      "The lighthouse stood silent, a beacon abandoned by time.",
+      "Ghostly lights flickered through the crashing waves."
+    ],
+    "content": [
+      "She walked the empty shore, searching for forgotten light...",
+      "Memories shimmered in the salt air, fragile and fleeting.",
+      "In the silence, she found echoes of her own heart."
+    ],
+    "genre": ["Mystery", "Drama", "Supernatural"],
+    "coverImage": "/images/forgotten-lighthouse-cover.jpg",
+    "createdAt": "2025-03-01T00:00:00.000Z"
+  },
+  {
+    "_id": "30",
+    "name": "The Clockwork Garden",
+    "slug": "clockwork-garden",
+    "description": "A steampunk fantasy where nature and machinery entwine.",
+    "about": [
+      "Themes of innovation, balance, and wonder.",
+      "A lush, imaginative world blending technology with life.",
+      "Inventive and richly descriptive storytelling."
+    ],
+    "preview": [
+      "Mechanical flowers bloomed with ticking hearts.",
+      "The garden hummed with gears and blossoms in harmony."
+    ],
+    "content": [
+      "Steam whispered through brass petals, a melody of creation...",
+      "She tended the clockwork blooms with gentle precision.",
+      "In the fusion of metal and leaf, a new life awakened."
+    ],
+    "genre": ["Fantasy", "Steampunk", "Adventure"],
+    "coverImage": "/images/clockwork-garden-cover.jpg",
+    "createdAt": "2025-03-15T00:00:00.000Z"
+  },
+  {
+    "_id": "31",
+    "name": "Veil of the Forgotten",
+    "slug": "veil-of-the-forgotten",
+    "description": "A haunting tale where memories slip through cracks in time.",
+    "about": [
+      "Themes of loss, memory, and rediscovery.",
+      "A poetic journey through fading recollections.",
+      "Mystical elements blend with melancholic reflection."
+    ],
+    "preview": [
+      "The veil shimmered, hiding stories no one dared to remember.",
+      "Each forgotten moment held a secret waiting to breathe again."
+    ],
+    "content": [
+      "She wandered through the mists of forgotten days...",
+      "Memories danced just beyond her grasp, fragile and fleeting.",
+      "In the quiet, the past whispered softly, calling her name."
+    ],
+    "genre": ["Mystery", "Drama", "Fantasy"],
+    "coverImage": "/images/veil-forgotten-cover.jpg",
+    "createdAt": "2025-04-01T00:00:00.000Z"
+  },
+  {
+    "_id": "32",
+    "name": "City of Starlit Dreams",
+    "slug": "city-of-starlit-dreams",
+    "description": "An urban fantasy where stars fall and dreams awaken.",
+    "about": [
+      "Explores the collision of the mundane and the magical.",
+      "Themes of hope, ambition, and wonder.",
+      "A vibrant narrative full of luminous imagery."
+    ],
+    "preview": [
+      "Stars tumbled from the sky, lighting paths unknown.",
+      "Dreams shimmered in the neon glow of city streets."
+    ],
+    "content": [
+      "Under the starlit veil, the city pulsed with secret magic...",
+      "She chased shadows that sparkled like fallen constellations.",
+      "In the heart of the metropolis, dreams were born anew."
+    ],
+    "genre": ["Fantasy", "Urban", "Adventure"],
+    "coverImage": "/images/city-starlit-dreams-cover.jpg",
+    "createdAt": "2025-04-10T00:00:00.000Z"
+  },
+  {
+    "_id": "33",
+    "name": "The Last Ember",
+    "slug": "the-last-ember",
+    "description": "A fiery saga of survival and the quest for renewal.",
+    "about": [
+      "Themes of destruction, rebirth, and inner strength.",
+      "An intense narrative set in a world scorched by war.",
+      "Emotionally charged and vividly described."
+    ],
+    "preview": [
+      "The ember glowed defiantly against the ash-filled sky.",
+      "From the ashes, new life struggled to ignite."
+    ],
+    "content": [
+      "She carried the last ember, a fragile spark of hope...",
+      "Flames danced around her, threatening to consume all.",
+      "In the fire’s heart, she found strength to begin again."
+    ],
+    "genre": ["Drama", "Adventure", "Post-Apocalyptic"],
+    "coverImage": "/images/last-ember-cover.jpg",
+    "createdAt": "2025-04-20T00:00:00.000Z"
+  },
+  {
+    "_id": "34",
+    "name": "Mirrors of the Soul",
+    "slug": "mirrors-of-the-soul",
+    "description": "A philosophical exploration of identity and perception.",
+    "about": [
+      "Themes of self-awareness, duality, and introspection.",
+      "A reflective, poetic narrative filled with symbolic imagery.",
+      "Questions what it means to truly see oneself."
+    ],
+    "preview": [
+      "Reflections fractured, revealing hidden facets of the soul.",
+      "Every mirror showed a story yet untold."
+    ],
+    "content": [
+      "She peered into mirrors that whispered truths and lies...",
+      "The soul shimmered in fragmented reflections.",
+      "Understanding came not from sight but from feeling."
+    ],
+    "genre": ["Philosophy", "Drama", "Psychological"],
+    "coverImage": "/images/mirrors-soul-cover.jpg",
+    "createdAt": "2025-05-01T00:00:00.000Z"
+  },
+  {
+    "_id": "35",
+    "name": "Chronicles of the Wind",
+    "slug": "chronicles-of-the-wind",
+    "description": "An epic saga carried on the breath of ancient winds.",
+    "about": [
+      "Themes of freedom, adventure, and legacy.",
+      "A sweeping narrative spanning generations.",
+      "Lyrical prose imbued with elemental magic."
+    ],
+    "preview": [
+      "The wind sang songs of heroes long forgotten.",
+      "Stories traveled on breezes across distant lands."
+    ],
+    "content": [
+      "He followed the wind’s call across mountains and seas...",
+      "Every gust carried whispers of destiny’s design.",
+      "In the wind’s embrace, legends were born anew."
+    ],
+    "genre": ["Fantasy", "Adventure", "Epic"],
+    "coverImage": "/images/chronicles-wind-cover.jpg",
+    "createdAt": "2025-05-12T00:00:00.000Z"
+  },
+  {
+    "_id": "36",
+    "name": "The Glass Garden",
+    "slug": "glass-garden",
+    "description": "A fragile world where beauty and danger intertwine.",
+    "about": [
+      "Themes of fragility, beauty, and peril.",
+      "A surreal narrative blending the natural and artificial.",
+      "Poetic imagery and vivid contrasts."
+    ],
+    "preview": [
+      "Glass petals shimmered with both light and sharp edges.",
+      "The garden whispered secrets through crystalline leaves."
+    ],
+    "content": [
+      "She stepped carefully, knowing each breath could shatter the world...",
+      "Beauty hid blades beneath its delicate surface.",
+      "In the glass garden, survival required grace and courage."
+    ],
+    "genre": ["Fantasy", "Drama", "Surreal"],
+    "coverImage": "/images/glass-garden-cover.jpg",
+    "createdAt": "2025-05-20T00:00:00.000Z"
+  },
+  {
+    "_id": "37",
+    "name": "The Serpent’s Code",
+    "slug": "serpents-code",
+    "description": "A cryptic thriller entangling secrets and ancient power.",
+    "about": [
+      "Themes of mystery, deception, and revelation.",
+      "A tense narrative packed with puzzles and intrigue.",
+      "Dark and gripping atmosphere."
+    ],
+    "preview": [
+      "Codes slithered through shadows, waiting to be cracked.",
+      "The serpent’s secret was hidden in plain sight."
+    ],
+    "content": [
+      "She decrypted symbols that twisted like serpents...",
+      "Each clue led deeper into a web of danger.",
+      "Truths and lies coiled tightly in the darkness."
+    ],
+    "genre": ["Thriller", "Mystery", "Adventure"],
+    "coverImage": "/images/serpents-code-cover.jpg",
+    "createdAt": "2025-05-28T00:00:00.000Z"
+  },
+  {
+    "_id": "38",
+    "name": "Echoes from the Abyss",
+    "slug": "echoes-from-the-abyss",
+    "description": "A dark dive into the unknown depths of the mind.",
+    "about": [
+      "Themes of fear, subconscious, and confrontation.",
+      "A psychological thriller with surreal horror elements.",
+      "Explores the abyss within and without."
+    ],
+    "preview": [
+      "Voices echoed from shadows unseen, pulling her deeper.",
+      "The abyss gazed back with endless eyes."
+    ],
+    "content": [
+      "She descended into darkness, where light dared not follow...",
+      "Thoughts tangled in labyrinths of fear and memory.",
+      "In the abyss, she faced the truth she tried to hide."
+    ],
+    "genre": ["Horror", "Psychological", "Thriller"],
+    "coverImage": "/images/echoes-abyss-cover.jpg",
+    "createdAt": "2025-06-05T00:00:00.000Z"
+  },
+  {
+    "_id": "39",
+    "name": "The Painted Veil",
+    "slug": "painted-veil",
+    "description": "A tale of art, deception, and hidden realities.",
+    "about": [
+      "Themes of illusion, creativity, and truth.",
+      "A suspenseful narrative set in the world of art and secrets.",
+      "Rich visual descriptions and layered storytelling."
+    ],
+    "preview": [
+      "Colors bled beyond the canvas, revealing unseen worlds.",
+      "The veil hid more than just paint and pigment."
+    ],
+    "content": [
+      "She uncovered paintings that whispered forbidden tales...",
+      "Each brushstroke masked a truth too dangerous to face.",
+      "In art’s shadows, deception thrived."
+    ],
+    "genre": ["Mystery", "Drama", "Psychological"],
+    "coverImage": "/images/painted-veil-cover.jpg",
+    "createdAt": "2025-06-12T00:00:00.000Z"
+  },
+  {
+    "_id": "40",
+    "name": "Lighthouse at the Edge of Dreams",
+    "slug": "lighthouse-edge-dreams",
+    "description": "A poetic voyage where waking life meets the dreamscape.",
+    "about": [
+      "Themes of transition, hope, and the subconscious.",
+      "A surreal narrative blending reality and fantasy.",
+      "Emotional and ethereal storytelling."
+    ],
+    "preview": [
+      "The lighthouse stood where dreams met the sea’s endless whisper.",
+      "Light shimmered through the veil of sleep and wakefulness."
+    ],
+    "content": [
+      "She walked the shore between worlds, guided by gentle light...",
+      "Dreams spilled like tides, shaping her path forward.",
+      "At the edge of dreams, she found a fragile peace."
+    ],
+    "genre": ["Fantasy", "Drama", "Poetry"],
+    "coverImage": "/images/lighthouse-edge-dreams-cover.jpg",
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "_id": "41",
+    "name": "Whispers of the Forgotten Grove",
+    "slug": "whispers-of-the-forgotten-grove",
+    "description": "Ancient secrets murmured by trees untouched by time.",
+    "about": [
+      "Explores the connection between nature and memory.",
+      "Mystical elements entwined with folklore and legend.",
+      "Themes of preservation and rediscovery."
+    ],
+    "preview": [
+      "The grove whispered tales lost to all but the wind.",
+      "Leaves rustled with echoes of forgotten lives."
+    ],
+    "content": [
+      "Beneath the canopy, shadows held the wisdom of ages...",
+      "Every root and branch spoke in quiet tongues.",
+      "In the heart of the grove, time itself seemed to pause."
+    ],
+    "genre": ["Fantasy", "Mystery", "Adventure"],
+    "coverImage": "/images/forgotten-grove-cover.jpg",
+    "createdAt": "2025-07-01T00:00:00.000Z"
+  },
+  {
+    "_id": "42",
+    "name": "Neon Souls",
+    "slug": "neon-souls",
+    "description": "In a city of lights, souls glow with hidden fire.",
+    "about": [
+      "Cyberpunk-inspired themes of identity and rebellion.",
+      "Juxtaposes human emotion against a neon-lit dystopia.",
+      "Fast-paced, vivid, and pulsating narrative."
+    ],
+    "preview": [
+      "Neon bled through the night, painting souls in electric hues.",
+      "In the glare, hidden fires burned brighter than the city lights."
+    ],
+    "content": [
+      "She ran through alleys where shadows and colors collided...",
+      "Every step was a defiance, a spark against the void.",
+      "The city’s heartbeat matched the rhythm of her fight."
+    ],
+    "genre": ["Science Fiction", "Cyberpunk", "Drama"],
+    "coverImage": "/images/neon-souls-cover.jpg",
+    "createdAt": "2025-07-10T00:00:00.000Z"
+  },
+  {
+    "_id": "43",
+    "name": "The Clockmaker’s Paradox",
+    "slug": "clockmakers-paradox",
+    "description": "Time is a puzzle, and he holds the pieces.",
+    "about": [
+      "A mind-bending story weaving time travel and morality.",
+      "Themes of causality, consequence, and human choice.",
+      "Intricate plot with philosophical undertones."
+    ],
+    "preview": [
+      "Each tick brought him closer to unraveling fate.",
+      "The clock’s hands twisted, bending reality’s rules."
+    ],
+    "content": [
+      "In the workshop of time, every gear spun with purpose...",
+      "He wrestled with moments that refused to remain still.",
+      "Paradoxes collided, reshaping the tapestry of existence."
+    ],
+    "genre": ["Science Fiction", "Philosophical", "Thriller"],
+    "coverImage": "/images/clockmakers-paradox-cover.jpg",
+    "createdAt": "2025-07-20T00:00:00.000Z"
+  },
+  {
+    "_id": "44",
+    "name": "Embers of the Silent Forest",
+    "slug": "embers-of-the-silent-forest",
+    "description": "A tale where silence conceals a burning heart.",
+    "about": [
+      "Themes of solitude, resilience, and hidden strength.",
+      "A quiet yet powerful narrative immersed in nature.",
+      "Lyrical and evocative storytelling."
+    ],
+    "preview": [
+      "The forest stood silent, yet embers glowed beneath the earth.",
+      "In the stillness, power awaited its moment to rise."
+    ],
+    "content": [
+      "She walked paths where whispers were swallowed by the trees...",
+      "Fire slept beneath leaves, waiting for dawn’s first breath.",
+      "In silence, a revolution began, subtle and fierce."
+    ],
+    "genre": ["Fantasy", "Drama", "Mystery"],
+    "coverImage": "/images/embers-silent-forest-cover.jpg",
+    "createdAt": "2025-07-30T00:00:00.000Z"
+  },
+  {
+    "_id": "45",
+    "name": "The Alchemist’s Shadow",
+    "slug": "alchemists-shadow",
+    "description": "Secrets of transformation hidden in darkness.",
+    "about": [
+      "Mystical themes exploring change, power, and sacrifice.",
+      "Dark, atmospheric, and enigmatic storytelling.",
+      "Blends alchemy with human ambition."
+    ],
+    "preview": [
+      "Shadows danced where gold and darkness intertwined.",
+      "The elixir promised change, but at a hidden cost."
+    ],
+    "content": [
+      "He toiled in the shadows, chasing the impossible dream...",
+      "Elements bent to his will, yet the price was never clear.",
+      "Transformation came with whispers from the abyss."
+    ],
+    "genre": ["Fantasy", "Mystery", "Drama"],
+    "coverImage": "/images/alchemists-shadow-cover.jpg",
+    "createdAt": "2025-08-05T00:00:00.000Z"
+  },
+  {
+    "_id": "46",
+    "name": "The Silent Orchestra",
+    "slug": "silent-orchestra",
+    "description": "A world where music is felt, not heard.",
+    "about": [
+      "Explores sensory experience beyond sound.",
+      "Themes of connection, loss, and expression.",
+      "Poetic narrative with a mystical atmosphere."
+    ],
+    "preview": [
+      "Notes danced invisibly, weaving threads between souls.",
+      "The silence was a symphony only the heart could hear."
+    ],
+    "content": [
+      "She moved through melodies shaped by light and shadow...",
+      "Music vibrated in the air, felt but never spoken.",
+      "In the silence, the orchestra played its eternal song."
+    ],
+    "genre": ["Fantasy", "Drama", "Poetry"],
+    "coverImage": "/images/silent-orchestra-cover.jpg",
+    "createdAt": "2025-08-15T00:00:00.000Z"
+  },
+  {
+    "_id": "47",
+    "name": "The Wandering Labyrinth",
+    "slug": "wandering-labyrinth",
+    "description": "A maze that shifts with every step taken.",
+    "about": [
+      "Themes of confusion, self-discovery, and transformation.",
+      "Surreal and psychological elements.",
+      "A narrative that challenges perception and reality."
+    ],
+    "preview": [
+      "Walls moved silently, trapping thoughts and dreams.",
+      "Every turn promised freedom or deeper entrapment."
+    ],
+    "content": [
+      "He wandered corridors that bent and twisted like his mind...",
+      "Escape was an illusion in the labyrinth’s endless dance.",
+      "Truth lay hidden beneath shifting walls of memory."
+    ],
+    "genre": ["Fantasy", "Psychological", "Mystery"],
+    "coverImage": "/images/wandering-labyrinth-cover.jpg",
+    "createdAt": "2025-08-22T00:00:00.000Z"
+  },
+  {
+    "_id": "48",
+    "name": "Saffron Skies",
+    "slug": "saffron-skies",
+    "description": "A love story painted in warm hues at dusk.",
+    "about": [
+      "Romantic and poetic with vibrant imagery.",
+      "Themes of hope, yearning, and fleeting moments.",
+      "Soft, lyrical prose that evokes emotion."
+    ],
+    "preview": [
+      "The sky blazed with saffron, a canvas for whispered promises.",
+      "Their shadows merged in the amber glow of twilight."
+    ],
+    "content": [
+      "They met where the horizon kissed the fading light...",
+      "Each moment burned bright before slipping into night.",
+      "Love bloomed beneath the saffron skies, fragile and true."
+    ],
+    "genre": ["Romance", "Drama", "Poetry"],
+    "coverImage": "/images/saffron-skies-cover.jpg",
+    "createdAt": "2025-09-01T00:00:00.000Z"
+  },
+  {
+    "_id": "49",
+    "name": "The Forgotten Lighthouse",
+    "slug": "forgotten-lighthouse",
+    "description": "A beacon lost to time, guarding forgotten tales.",
+    "about": [
+      "Themes of isolation, memory, and guidance.",
+      "A melancholic story with mystical undertones.",
+      "Atmospheric and evocative storytelling."
+    ],
+    "preview": [
+      "The lighthouse stood silent, its light a distant memory.",
+      "Waves carried stories of those who once sought its glow."
+    ],
+    "content": [
+      "She climbed the spiral stairs, seeking the light’s faint call...",
+      "Echoes of the past flickered in the shadows of glass.",
+      "In the forgotten tower, hope still lingered like a ghost."
+    ],
+    "genre": ["Mystery", "Drama", "Fantasy"],
+    "coverImage": "/images/forgotten-lighthouse-cover.jpg",
+    "createdAt": "2025-09-10T00:00:00.000Z"
+  },
+  {
+    "_id": "50",
+    "name": "Celestial Threads",
+    "slug": "celestial-threads",
+    "description": "Stories woven in the fabric of the cosmos.",
+    "about": [
+      "Explores fate, destiny, and cosmic connections.",
+      "A mystical narrative blending science and spirituality.",
+      "Elegant prose filled with starry symbolism."
+    ],
+    "preview": [
+      "Threads of light connected souls across galaxies.",
+      "The universe hummed with untold stories waiting to be told."
+    ],
+    "content": [
+      "She traced patterns in the stars, linking lives unseen...",
+      "Destiny wove a tapestry of infinite beauty and mystery.",
+      "In the celestial loom, every thread told a story."
+    ],
+    "genre": ["Fantasy", "Science Fiction", "Philosophy"],
+    "coverImage": "/images/celestial-threads-cover.jpg",
+    "createdAt": "2025-09-20T00:00:00.000Z"
+  }
+]

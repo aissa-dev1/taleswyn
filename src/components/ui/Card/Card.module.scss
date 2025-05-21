@@ -1,0 +1,85 @@
+@use "@/styles/mixins" as mixins;
+
+$cardPadding: var(--spacing-md);
+
+.card {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--border);
+}
+
+.default {
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.withPadding {
+  padding: $cardPadding;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-family: var(--ui-font);
+}
+
+.cardDescription {
+}
+
+.fontSizeXl {
+  font-size: var(--font-size-xl);
+}
+
+.fontWeightBold {
+  font-weight: 700;
+}
+
+.fontWeightSemiBold {
+  font-weight: 600;
+}
+
+.cardHeader {
+  padding-inline: $cardPadding;
+  padding-top: $cardPadding;
+}
+
+.cardContent {
+  padding: $cardPadding;
+}
+
+.cardFooter {
+  padding-inline: $cardPadding;
+  padding-bottom: $cardPadding;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.25rem;
+}
+
+@include mixins.media(sm) {
+  .closeButton {
+    top: 1rem;
+    right: 0.75rem;
+  }
+}
+
+@include mixins.media(md) {
+  .closeButton {
+    top: 2rem;
+    right: 1.5rem;
+  }
+}

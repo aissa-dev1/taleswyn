@@ -2,16 +2,8 @@
   padding-top: var(--navbar-height);
 }
 
-.headline {
-  text-align: center;
-}
-
-.content {
-  margin-top: var(--spacing-lg);
-}
-
+.headline,
 .tagline {
-  margin-bottom: var(--spacing-xl);
   text-align: center;
 }
 
@@ -27,9 +19,7 @@
   }
 }
 
-.descriptions {
-  margin-top: var(--spacing-md);
-
+.content {
   p {
     margin-bottom: var(--spacing-md);
     color: var(--gray-foreground);

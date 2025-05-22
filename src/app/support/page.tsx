@@ -6,7 +6,7 @@ import { H1, P } from "@/components/ui/Typography";
 export default function Support() {
   return (
     <main className={styles.main}>
-      <CompactContainer withPaddingBlock withContentSpacing>
+      <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>Support 💜</H1>
         <P size="lg" className={styles.text}>
           If you enjoy the stories I write and the world I build, consider

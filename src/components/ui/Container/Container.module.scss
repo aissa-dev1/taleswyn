@@ -21,7 +21,7 @@
 .withContentSpacing {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: calc(2 * var(--spacing-2xl));
 }
 
 .lg,

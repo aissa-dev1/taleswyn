@@ -8,6 +8,9 @@
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-2xl);
 
   &:last-child {
@@ -20,6 +23,10 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+
   p {
     margin-bottom: var(--spacing-md);
     color: var(--gray-foreground);

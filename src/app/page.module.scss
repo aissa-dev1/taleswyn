@@ -26,6 +26,10 @@
   width: 100%;
 }
 
+.quoteOfTheDayWrapper {
+  margin-top: calc(2 * var(--spacing-2xl));
+}
+
 @include mixins.media(sm) {
   .exploreLink {
     width: 150px;

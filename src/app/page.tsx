@@ -11,6 +11,7 @@ import {
   FeaturedSection,
   FeaturedSectionError,
   FeaturedSectionLoading,
+  QuoteOfTheDaySection,
 } from "@/components/sections";
 import { HeroCanvasLazy } from "@/components/HeroCanvas/HeroCanvasLazy";
 
@@ -36,6 +37,9 @@ export default function Home() {
           </Suspense>
         </ErrorBoundary>
       </Container>
+      <CompactContainer withPaddingBlock withContentSpacing>
+        <QuoteOfTheDaySection />
+      </CompactContainer>
     </main>
   );
 }

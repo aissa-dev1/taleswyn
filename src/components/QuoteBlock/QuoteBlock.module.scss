@@ -1,0 +1,41 @@
+$quoteFont: Georgia, "Times New Roman", Times, serif;
+
+.quoteBlock {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem 2rem;
+  font-family: $quoteFont;
+  border-radius: var(--radius-rounded);
+  line-height: 1.6;
+  position: relative;
+
+  &::before {
+    content: "“";
+    font-size: 3rem;
+    color: var(--primary);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: $quoteFont;
+    font-weight: bold;
+    user-select: none;
+  }
+}
+
+.quoteText {
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  font-weight: 600;
+  text-align: right;
+}

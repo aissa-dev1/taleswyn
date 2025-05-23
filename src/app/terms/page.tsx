@@ -14,10 +14,10 @@ export default function TermsAndConditions() {
           By using Short Stories, you agree to these Terms and Conditions. If
           you don’t agree, please don’t use the site.
         </P>
-        <div className={styles.content}>
+        <div className={styles.sectionWrapper}>
           {terms.map((term, index) => (
             <div key={index} className={styles.section}>
-              <H3>{term.title}</H3>
+              <H3 transform="capitalize">{term.title}</H3>
               <div className={styles.content}>
                 {term.content.map((contentText, index) => (
                   <P key={index}>{contentText}</P>

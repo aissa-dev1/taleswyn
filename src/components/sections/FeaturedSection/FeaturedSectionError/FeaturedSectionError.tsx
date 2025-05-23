@@ -11,7 +11,7 @@ const FeaturedSectionError: React.FC<Props> = ({ error, reset }) => {
   return (
     <div className={styles.container}>
       <H1 transform="capitalize" className={styles.headline}>
-        Featured stories
+        Featured section
       </H1>
       <ErrorFallback error={error} reset={reset} />
     </div>

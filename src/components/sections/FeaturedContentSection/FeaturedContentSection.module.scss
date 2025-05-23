@@ -1,0 +1,40 @@
+@use "@/styles/mixins" as mixins;
+
+.headline {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.badgeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.continueReadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.continueReadingLink {
+  width: 100%;
+}
+
+@include mixins.media(sm) {
+  .continueReadingLink {
+    width: 150px;
+  }
+}

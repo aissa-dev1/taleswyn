@@ -1,6 +1,6 @@
 "use server";
 
-import { StoryType } from "@/components/Story";
+import { StoryContentType, StoryType } from "@/components/Story";
 import storiesData from "@/data/stories.json";
 
 interface GetLibraryStoriesQuery {
@@ -35,9 +35,30 @@ async function getLibraryStories(
   };
 }
 
-async function getFeaturedStories(): Promise<StoryType[]> {
+interface GetFeaturedStoriesResponse {
+  stories: StoryType[];
+  content: {
+    contentText: string[];
+    storyName: string;
+    storySlug: string;
+  };
+}
+
+async function getFeaturedStories(): Promise<GetFeaturedStoriesResponse> {
   const stories = getAllStories();
-  return stories.slice(0, 5);
+  const featuredStories = stories.slice(0, 5);
+  const featuredContentList = featuredStories.map((s) => ({
+    contentText: s.content.slice(0, 6),
+    storyName: s.name,
+    storySlug: s.slug,
+  }));
+  const featuredContent =
+    featuredContentList[Math.floor(Math.random() * featuredContentList.length)];
+
+  return {
+    stories: featuredStories,
+    content: featuredContent,
+  };
 }
 
 async function getStoryBySlug(slug: string): Promise<StoryType> {

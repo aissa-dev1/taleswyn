@@ -37,7 +37,10 @@ export default function Home() {
           </Suspense>
         </ErrorBoundary>
       </Container>
-      <CompactContainer withPaddingBlock withContentSpacing>
+      <CompactContainer
+        className={styles.quoteOfTheDayWrapper}
+        withPaddingBlock
+      >
         <QuoteOfTheDaySection />
       </CompactContainer>
     </main>

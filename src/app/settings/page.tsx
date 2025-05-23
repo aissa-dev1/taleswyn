@@ -7,7 +7,7 @@ import { SettingsCardsSection } from "@/components/sections";
 export default function Settings() {
   return (
     <main className={styles.main}>
-      <CompactContainer withPaddingBlock withContentSpacing>
+      <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>Settings</H1>
         <div className={styles.sections}>
           <SettingsCardsSection />

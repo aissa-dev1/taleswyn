@@ -11,7 +11,6 @@ import {
   FeaturedSection,
   FeaturedSectionError,
   FeaturedSectionLoading,
-  NewsletterSubSection,
 } from "@/components/sections";
 import { HeroCanvasLazy } from "@/components/HeroCanvas/HeroCanvasLazy";
 
@@ -37,9 +36,6 @@ export default function Home() {
           </Suspense>
         </ErrorBoundary>
       </Container>
-      <CompactContainer withPaddingBlock withContentSpacing>
-        <NewsletterSubSection />
-      </CompactContainer>
     </main>
   );
 }

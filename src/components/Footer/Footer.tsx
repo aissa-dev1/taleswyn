@@ -18,10 +18,10 @@ const Footer: React.FC<Props> = () => {
       <Container className={styles.footerContainer}>
         <div className={styles.footerLeftSection}>
           <Link href="/" className={styles.titleLink}>
-            <H3>Short stories</H3>
+            <H3>Taleswyn</H3>
           </Link>
           <P weight="semi-bold" variant="gray" transform="capitalize">
-            All rights reserved 2025 ©
+            All rights reserved © 2025
           </P>
         </div>
         <div>
@@ -35,7 +35,7 @@ const Footer: React.FC<Props> = () => {
         </div>
         <div className={styles.followLinks}>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/taleswyn"
             target="_blank"
             className={styles.followLink}
           >

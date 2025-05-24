@@ -11,8 +11,8 @@ export default function TermsAndConditions() {
       <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>Terms and Conditions</H1>
         <P size="xl" className={styles.tagline}>
-          By using Short Stories, you agree to these Terms and Conditions. If
-          you don’t agree, please don’t use the site.
+          By using Taleswyn, you agree to these Terms and Conditions. If you
+          don’t agree, please don’t use the site.
         </P>
         <div className={styles.sectionWrapper}>
           {terms.map((term, index) => (

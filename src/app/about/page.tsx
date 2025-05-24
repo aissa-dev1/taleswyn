@@ -14,10 +14,9 @@ export default function About() {
       <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>About Us</H1>
         <P size="xl" className={styles.tagline}>
-          Short Stories is more than just a platform, it’s a haven for readers.
-          We’ve built a carefully curated library packed with stories from every
-          genre, all designed to give you a unique and immersive reading
-          experience.
+          Taleswyn is more than just a platform, it’s a haven for readers. We’ve
+          built a carefully curated library packed with tales from every genre,
+          all designed to give you a unique and immersive reading experience.
         </P>
         <div className={styles.sectionWrapper}>
           {about.map((section, index) => (
@@ -32,7 +31,7 @@ export default function About() {
           ))}
         </div>
         <div className={styles.actions}>
-          <Link href="/s">
+          <Link href="/t">
             <Button size="sm" variant="inverse">
               Library
             </Button>

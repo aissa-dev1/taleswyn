@@ -44,7 +44,7 @@ const NavbarDrawer: React.FC<Props> = () => {
         <DrawerOverlay />
         <DrawerContent className={styles.drawerContent}>
           <DrawerHeader>
-            <DrawerTitle>Short stories</DrawerTitle>
+            <DrawerTitle>Taleswyn</DrawerTitle>
           </DrawerHeader>
           <DrawerBody className={styles.drawerBody}>
             <div className={styles.drawerLinks}>

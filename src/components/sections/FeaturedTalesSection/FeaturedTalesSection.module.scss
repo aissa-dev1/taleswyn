@@ -1,0 +1,33 @@
+@use "@/styles/mixins" as mixins;
+
+.headline {
+  text-align: center;
+}
+
+.tales {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.talesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.talesExploreMoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exploreLink {
+  width: 100%;
+}
+
+@include mixins.media(sm) {
+  .exploreLink {
+    width: 150px;
+  }
+}

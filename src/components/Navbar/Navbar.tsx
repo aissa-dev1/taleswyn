@@ -21,7 +21,7 @@ const Navbar: React.FC<Props> = () => {
           <NavbarDrawer />
           <Link href="/">
             <P size="lg" weight="bold" className={styles.title}>
-              Short stories
+              Taleswyn
             </P>
           </Link>
         </div>

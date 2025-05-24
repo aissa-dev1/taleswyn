@@ -25,11 +25,11 @@ export default function Home() {
           <HeroCanvasLazy />
           <div className={styles.heroContent}>
             <H1 transform="capitalize" variant="primary">
-              Discover amazing short stories
+              Discover unforgettable tales
             </H1>
             <P>Read, imagine, and escape into worlds beyond your own.</P>
-            <Link href="/s" className={styles.exploreLink}>
-              <Button size="full">Explore Stories</Button>
+            <Link href="/t" className={styles.exploreLink}>
+              <Button size="full">Explore Tales</Button>
             </Link>
           </div>
         </div>

@@ -10,7 +10,7 @@ const navBarLinks: LinkType[] = [
   },
   {
     name: "Library",
-    href: "/s",
+    href: "/t",
   },
   {
     name: "About",
@@ -30,17 +30,6 @@ const navBarLinks: LinkType[] = [
   },
 ];
 
-const authLinks: LinkType[] = [
-  {
-    name: "Sign in",
-    href: "/sign-in",
-  },
-  {
-    name: "Sign up",
-    href: "/sign-up",
-  },
-];
-
 const footerLinks: LinkType[] = [
   ...navBarLinks,
   {
@@ -49,4 +38,4 @@ const footerLinks: LinkType[] = [
   },
 ];
 
-export { navBarLinks, authLinks, footerLinks };
+export { navBarLinks, footerLinks };

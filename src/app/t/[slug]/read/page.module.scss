@@ -1,0 +1,25 @@
+.main {
+  padding-top: var(--navbar-height);
+}
+
+.headline {
+  text-align: center;
+}
+
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.skeletonHeadline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taleContentList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

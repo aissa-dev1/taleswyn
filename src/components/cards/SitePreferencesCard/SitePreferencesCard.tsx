@@ -1,4 +1,4 @@
-import styles from "./ReadingPreferencesCard.module.scss";
+import styles from "./SitePreferencesCard.module.scss";
 
 import { SettingsCard, SettingsCardItem } from "../SettingsCard";
 import { ThemeSelect } from "@/components/Theme";

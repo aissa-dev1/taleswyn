@@ -18,14 +18,14 @@ const LibraryLoadMoreButton: React.FC<Props> = ({ limit, count }) => {
   function handleOnClick() {
     const params = new URLSearchParams(searchParams);
     params.set("limit", (limit + PAGINATION_DEFAULT_LIMIT).toString());
-    router.push(`/s?${params.toString()}`, { scroll: false });
+    router.push(`/t?${params.toString()}`, { scroll: false });
   }
 
   if (limit >= count) return null;
 
   return (
     <Button size="responsive" onClick={handleOnClick}>
-      Load More Stories
+      Load More Tales
     </Button>
   );
 };

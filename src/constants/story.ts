@@ -1,1 +1,0 @@
-export const STORY_READ_TIMEOUT_MS = 10000;

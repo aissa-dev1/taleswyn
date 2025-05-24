@@ -14,8 +14,8 @@ const SitePreferencesCard = dynamic(
   }
 );
 
-const StoryPreferencesCard = dynamic(
-  () => import("@/components/Story").then((mod) => mod.StoryPreferencesCard),
+const TalePreferencesCard = dynamic(
+  () => import("@/components/Tale").then((mod) => mod.TalePreferencesCard),
   {
     loading: () => <Skeleton type="card" />,
     ssr: false,
@@ -28,7 +28,7 @@ const SettingsCardsSection: React.FC<Props> = () => {
   return (
     <div className={styles.container}>
       <SitePreferencesCard />
-      <StoryPreferencesCard />
+      <TalePreferencesCard />
     </div>
   );
 };

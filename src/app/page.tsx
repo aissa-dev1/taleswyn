@@ -15,6 +15,8 @@ import {
 } from "@/components/sections";
 import { HeroCanvasLazy } from "@/components/HeroCanvas/HeroCanvasLazy";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main>

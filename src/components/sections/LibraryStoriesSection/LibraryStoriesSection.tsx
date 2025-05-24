@@ -11,8 +11,8 @@ import { getLibraryStories, GetLibraryStoriesQuery } from "@/lib/data/story";
 
 interface Props extends GetLibraryStoriesQuery {}
 
-const LibraryStoriesSection: React.FC<Props> = async (props) => {
-  const libraryStoriesResponse = await getLibraryStories({
+const LibraryStoriesSection: React.FC<Props> = (props) => {
+  const libraryStoriesResponse = getLibraryStories({
     skip: props.skip,
     limit: props.limit,
     q: props.q ?? "",

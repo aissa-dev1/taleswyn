@@ -51,13 +51,16 @@ const Story: React.FC<Props> = ({
           <Badge key={item}>{item}</Badge>
         ))}
       </div>
-      <Image
-        className={styles.coverImage}
-        src="/short-story-cover.jpeg"
-        alt={`${name} Cover`}
-        width={178.5}
-        height={200}
-      />
+      <div className={styles.coverImageWrapper}>
+        <Image
+          className={styles.coverImage}
+          src={coverImage}
+          alt={`${name} Cover`}
+          width={175}
+          height={200}
+          style={{ objectFit: "cover" }}
+        />
+      </div>
       <div className={styles.content}>
         {shouldShowTitle && <CardTitle>{name}</CardTitle>}
         <CardDescription>{description}</CardDescription>

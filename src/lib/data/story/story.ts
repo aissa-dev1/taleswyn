@@ -1,6 +1,6 @@
 "use server";
 
-import { StoryContentType, StoryType } from "@/components/Story";
+import { StoryType } from "@/components/Story";
 import storiesData from "@/data/stories.json";
 
 interface GetLibraryStoriesQuery {
@@ -19,15 +19,37 @@ function getAllStories(): StoryType[] {
   return storiesData as unknown as StoryType[];
 }
 
-async function getLibraryStories(
+async function getStoryGenres(): Promise<string[]> {
+  const storyGenres = getAllStories().map((story) => story.genre);
+  const storyGenresSet = new Set<string>();
+
+  for (let i = 0; i < storyGenres.length; i++) {
+    for (let j = 0; j < storyGenres[i].length; j++) {
+      storyGenresSet.add(storyGenres[i][j]);
+    }
+  }
+
+  return Array.from(storyGenresSet);
+}
+
+function getLibraryStories(
   query: GetLibraryStoriesQuery
-): Promise<GetLibraryStoriesResponse> {
-  const stories = getAllStories();
-  const queryLower = query.q.toLowerCase();
-  const filteredStories = stories.filter((story) => {
-    return story.name.toLowerCase().includes(queryLower);
+): GetLibraryStoriesResponse {
+  const queryLower = query.q?.toLowerCase() || "";
+  const genreFilter =
+    query.genre?.toLowerCase() === "all-genres" || !query.genre
+      ? undefined
+      : query.genre.toLowerCase();
+
+  const filteredStories = getAllStories().filter((story) => {
+    const nameMatches =
+      queryLower === "" || story.name.toLowerCase().includes(queryLower);
+    const genreMatches =
+      !genreFilter || story.genre.some((g) => g.toLowerCase() === genreFilter);
+    return nameMatches && genreMatches;
   });
-  const data = filteredStories.slice(query.skip, query.limit);
+
+  const data = filteredStories.slice(query.skip, query.skip + query.limit);
 
   return {
     data,
@@ -45,8 +67,7 @@ interface GetFeaturedStoriesResponse {
 }
 
 async function getFeaturedStories(): Promise<GetFeaturedStoriesResponse> {
-  const stories = getAllStories();
-  const featuredStories = stories.slice(0, 5);
+  const featuredStories = getAllStories().slice(0, 5);
   const featuredContentList = featuredStories.map((s) => ({
     contentText: s.content.slice(0, 6),
     storyName: s.name,
@@ -62,8 +83,7 @@ async function getFeaturedStories(): Promise<GetFeaturedStoriesResponse> {
 }
 
 async function getStoryBySlug(slug: string): Promise<StoryType> {
-  const stories = getAllStories();
-  const story = stories.find((s) => s.slug === slug);
+  const story = getAllStories().find((s) => s.slug === slug);
 
   if (!story) {
     throw new Error("No story found.");
@@ -77,5 +97,6 @@ export {
   getLibraryStories,
   getFeaturedStories,
   getStoryBySlug,
+  getStoryGenres,
   type GetLibraryStoriesQuery,
 };

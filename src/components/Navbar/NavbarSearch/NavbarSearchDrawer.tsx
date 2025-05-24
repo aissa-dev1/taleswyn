@@ -34,7 +34,7 @@ const NavbarSearchDrawer: React.FC<Props> = () => {
         <DrawerOverlay />
         <DrawerContent className={styles.drawerContent}>
           <DrawerHeader>
-            <DrawerTitle>Search Stories</DrawerTitle>
+            <DrawerTitle>Search Tales</DrawerTitle>
           </DrawerHeader>
           <DrawerBody className={styles.drawerBody}>
             <NavbarSearchContent setOpen={setOpen} />

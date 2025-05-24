@@ -18,7 +18,7 @@ import {
 import { useSearchStore } from "@/stores/search";
 
 import { FILTER_DEFAULT_TIMEOUT } from "@/constants/filter";
-import { getStoryGenres } from "@/lib/data/story";
+import { getTaleGenres } from "@/lib/data/tale";
 
 interface Props {}
 
@@ -34,7 +34,7 @@ const LibraryFilters: React.FC<Props> = ({}) => {
   function updateSearchParams(paramKey: string, paramValue: string) {
     const params = new URLSearchParams(searchParams);
     params.set(paramKey, paramValue);
-    router.push(`/s?${params.toString()}`);
+    router.push(`/t?${params.toString()}`);
   }
 
   function handleQueryFilter(query: string) {
@@ -54,13 +54,13 @@ const LibraryFilters: React.FC<Props> = ({}) => {
     }
   }
 
-  async function initStoryGenres() {
-    setGenres(await getStoryGenres());
+  async function initTaleGenres() {
+    setGenres(await getTaleGenres());
   }
 
   useEffect(() => {
     setQuery(searchParams.get("q") || "");
-    initStoryGenres();
+    initTaleGenres();
 
     return () => {
       setQuery("");
@@ -70,7 +70,7 @@ const LibraryFilters: React.FC<Props> = ({}) => {
   return (
     <div className={styles.container}>
       <Input
-        label="Search stories"
+        label="Search tales"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
@@ -85,9 +85,9 @@ const LibraryFilters: React.FC<Props> = ({}) => {
           <SelectContent>
             <SelectGroup>
               <SelectItem value="all-genres">All Genres</SelectItem>
-              {genres.map((storyGenre) => (
-                <SelectItem key={storyGenre} value={storyGenre}>
-                  {storyGenre}
+              {genres.map((taleGenre) => (
+                <SelectItem key={taleGenre} value={taleGenre}>
+                  {taleGenre}
                 </SelectItem>
               ))}
             </SelectGroup>

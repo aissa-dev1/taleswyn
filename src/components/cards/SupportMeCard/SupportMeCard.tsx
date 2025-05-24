@@ -28,7 +28,7 @@ const SupportMeCard: React.FC<Props> = () => {
       <CardHeader>
         <CardTitle>Support the Journey 💜</CardTitle>
         <CardDescription>
-          If this story stirred something in you,
+          If this tale stirred something in you,
           <br />
           consider fueling the pen behind it.
         </CardDescription>

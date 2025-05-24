@@ -75,30 +75,30 @@ const ContactForm: React.FC<Props> = () => {
         <Input
           label="Your name (Optional)"
           name="name"
-          defaultValue={form.name}
-          onBlur={updateFormProp}
+          value={form.name}
+          onChange={updateFormProp}
         />
         <Input
           type="email"
           label="Email"
           required
           name="email"
-          defaultValue={form.email}
-          onBlur={updateFormProp}
+          value={form.email}
+          onChange={updateFormProp}
         />
       </div>
       <Input
         label="Subject (Optional)"
         name="subject"
-        defaultValue={form.subject}
-        onBlur={updateFormProp}
+        value={form.subject}
+        onChange={updateFormProp}
       />
       <Input
         label="Message"
         required
         name="message"
-        defaultValue={form.message}
-        onBlur={updateFormProp}
+        value={form.message}
+        onChange={updateFormProp}
       />
       <Button size="responsive" type="submit" disabled={form.pending}>
         {form.pending ? "Loading..." : "Send Message"}

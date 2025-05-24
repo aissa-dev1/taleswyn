@@ -1,17 +1,17 @@
 import { FeaturedContentSection } from "../FeaturedContentSection";
-import { FeaturedStoriesSection } from "../FeaturedStoriesSection";
+import { FeaturedTalesSection } from "../FeaturedTalesSection";
 
-import { getFeaturedStories } from "@/lib/data/story";
+import { getFeaturedTales } from "@/lib/data/tale";
 
 interface Props {}
 
 const FeaturedSection: React.FC<Props> = async () => {
-  const featuredStoriesResponse = await getFeaturedStories();
+  const featuredTalesResponse = await getFeaturedTales();
 
   return (
     <>
-      <FeaturedStoriesSection stories={featuredStoriesResponse.stories} />
-      <FeaturedContentSection content={featuredStoriesResponse.content} />
+      <FeaturedTalesSection tales={featuredTalesResponse.tales} />
+      <FeaturedContentSection content={featuredTalesResponse.content} />
     </>
   );
 };

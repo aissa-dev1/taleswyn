@@ -9,7 +9,7 @@ export default function Support() {
       <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>Support 💜</H1>
         <P size="lg" className={styles.text}>
-          If you enjoy the stories I write and the world I build, consider
+          If you enjoy the tales I write and the world I build, consider
           supporting me on Ko-fi. Every contribution fuels future creations ✨
         </P>
         <iframe

@@ -1,0 +1,11 @@
+@use "@/styles/mixins" as mixins;
+
+.tales {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.tale {
+  @include mixins.fadeIn();
+}

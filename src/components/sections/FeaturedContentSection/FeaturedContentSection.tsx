@@ -7,12 +7,12 @@ import styles from "./FeaturedContentSection.module.scss";
 import { H1 } from "@/components/ui/Typography";
 import { Show } from "@/components/Show";
 import { EmptyState } from "@/components/EmptyState";
-import { StoryContent } from "@/components/Story";
+import { TaleContent } from "@/components/Tale";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
 interface Props {
-  content: { contentText: string[]; storyName: string; storySlug: string };
+  content: { contentText: string[]; taleName: string; taleSlug: string };
 }
 
 const FeaturedContentSection: React.FC<Props> = ({ content }) => {
@@ -21,9 +21,9 @@ const FeaturedContentSection: React.FC<Props> = ({ content }) => {
       <H1 transform="capitalize" className={styles.headline}>
         Featured content
       </H1>
-      {content?.storyName && (
+      {content?.taleName && (
         <div className={styles.badgeWrapper}>
-          <Badge>{content.storyName}</Badge>
+          <Badge>{content.taleName}</Badge>
         </div>
       )}
       <Show
@@ -37,7 +37,7 @@ const FeaturedContentSection: React.FC<Props> = ({ content }) => {
       >
         <div className={styles.contentList}>
           {content?.contentText.map((text, index) => (
-            <StoryContent
+            <TaleContent
               key={index}
               contentText={text}
               contentIndex={index}
@@ -47,7 +47,7 @@ const FeaturedContentSection: React.FC<Props> = ({ content }) => {
         </div>
         <div className={styles.continueReadingContainer}>
           <Link
-            href={`/s/${content?.storySlug}/read`}
+            href={`/t/${content?.taleSlug}/read`}
             className={styles.continueReadingLink}
           >
             <Button size="full">Continue Reading</Button>

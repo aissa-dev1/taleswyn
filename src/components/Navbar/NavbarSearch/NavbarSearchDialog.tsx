@@ -28,7 +28,7 @@ const NavbarSearchDialog: React.FC<Props> = () => {
         </Button>
       </DialogTrigger>
       <DialogContent>
-        <DialogTitle>Search Stories</DialogTitle>
+        <DialogTitle>Search Tales</DialogTitle>
         <NavbarSearchContent setOpen={setOpen} />
         <DialogClose asChild>
           <XIcon size={20} />

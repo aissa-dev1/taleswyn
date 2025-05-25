@@ -1,14 +1,10 @@
 import styles from "./page.module.scss";
 
 import { Container } from "@/components/ui/Container";
-import {
-  Tale,
-  TaleAboutCard,
-  TalePreviewCard,
-  TaleType,
-} from "@/components/Tale";
+import { Tale, TaleAboutCard } from "@/components/Tale";
 import { H1 } from "@/components/ui/Typography";
 import { BackTopButton } from "@/components/buttons";
+import { Main } from "@/components/Main";
 
 import { getAllTales, getTaleBySlug } from "@/lib/data/tale";
 
@@ -26,7 +22,7 @@ export default async function TalePage(props: Props) {
   const tale = await getTaleBySlug(params.slug);
 
   return (
-    <main className={styles.main}>
+    <Main>
       <Container withPaddingBlock>
         <H1
           variant="primary"
@@ -43,14 +39,9 @@ export default async function TalePage(props: Props) {
             shouldShowReadButton
           />
           <TaleAboutCard name={tale.name} about={tale.about} />
-          <TalePreviewCard
-            id={tale._id}
-            name={tale.name}
-            preview={tale.preview}
-          />
         </div>
         <BackTopButton />
       </Container>
-    </main>
+    </Main>
   );
 }

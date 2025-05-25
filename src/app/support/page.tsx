@@ -2,10 +2,11 @@ import styles from "./page.module.scss";
 
 import { CompactContainer } from "@/components/ui/Container";
 import { H1, P } from "@/components/ui/Typography";
+import { Main } from "@/components/Main";
 
 export default function Support() {
   return (
-    <main className={styles.main}>
+    <Main>
       <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>Support 💜</H1>
         <P size="lg" className={styles.text}>
@@ -20,6 +21,6 @@ export default function Support() {
           title="aissabedr"
         />
       </CompactContainer>
-    </main>
+    </Main>
   );
 }

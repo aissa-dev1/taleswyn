@@ -12,6 +12,7 @@ import {
 } from "@/components/sections";
 import { BackTopButton } from "@/components/buttons";
 import { H1 } from "@/components/ui/Typography";
+import { Main } from "@/components/Main";
 
 import { PAGINATION_DEFAULT_LIMIT } from "@/constants/filter";
 import { GetLibraryTalesQuery } from "@/lib/data/tale";
@@ -31,7 +32,7 @@ export default async function Library(props: Props) {
     : PAGINATION_DEFAULT_LIMIT;
 
   return (
-    <main className={styles.main}>
+    <Main>
       <Container withPaddingBlock>
         <div className={styles.content}>
           <H1 className={styles.headline}>Library</H1>
@@ -51,6 +52,6 @@ export default async function Library(props: Props) {
         </div>
         <BackTopButton />
       </Container>
-    </main>
+    </Main>
   );
 }

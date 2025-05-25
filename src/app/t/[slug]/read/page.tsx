@@ -13,6 +13,7 @@ import { SeparatorHighlighter } from "@/components/SeparatorHighlighter";
 import { ToggleNavbarFixed } from "@/components/Navbar";
 import { BackTopButton } from "@/components/buttons";
 import { SupportMeCardLazy } from "@/components/cards/SupportMeCard/SupportMeCardLazy";
+import { Main } from "@/components/Main";
 
 import { getAllTales, getTaleBySlug } from "@/lib/data/tale";
 
@@ -33,7 +34,7 @@ export default async function ReadTalePage(props: Props) {
     <>
       <SeparatorHighlighter />
       <ToggleNavbarFixed />
-      <main className={styles.main}>
+      <Main>
         <CompactContainer spacing="lg" withPaddingBlock>
           <TaleBackButton taleSlug={params.slug} />
           <H1
@@ -65,7 +66,7 @@ export default async function ReadTalePage(props: Props) {
           <SupportMeCardLazy />
           <BackTopButton />
         </CompactContainer>
-      </main>
+      </Main>
     </>
   );
 }

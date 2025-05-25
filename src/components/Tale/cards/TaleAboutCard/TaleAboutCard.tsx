@@ -22,7 +22,7 @@ const TaleAboutCard: React.FC<Props> = ({ name, about }) => {
           transform="capitalize"
           className={styles.uiFont}
         >
-          {name}'s about
+          About this Tale
         </P>
       </CardHeader>
       <CardContent>

@@ -1,12 +1,9 @@
-$quoteFont: Georgia, "Times New Roman", Times, serif;
-
 .quoteBlock {
   background-color: var(--card);
   color: var(--card-foreground);
   border: 1px solid var(--border);
   border-left: 4px solid var(--primary);
   padding: 1.5rem 2rem;
-  font-family: $quoteFont;
   border-radius: var(--radius-rounded);
   line-height: 1.6;
   position: relative;
@@ -18,7 +15,6 @@ $quoteFont: Georgia, "Times New Roman", Times, serif;
     position: absolute;
     top: 10px;
     left: 15px;
-    font-family: $quoteFont;
     font-weight: bold;
     user-select: none;
   }

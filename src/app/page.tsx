@@ -14,12 +14,13 @@ import {
   QuoteOfTheDaySection,
 } from "@/components/sections";
 import { HeroCanvasLazy } from "@/components/HeroCanvas/HeroCanvasLazy";
+import { Main } from "@/components/Main";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
-    <main>
+    <Main withPaddingTop={false}>
       <Container withPaddingBlock withContentSpacing>
         <div className={styles.hero}>
           <HeroCanvasLazy />
@@ -45,6 +46,6 @@ export default function Home() {
       >
         <QuoteOfTheDaySection />
       </CompactContainer>
-    </main>
+    </Main>
   );
 }

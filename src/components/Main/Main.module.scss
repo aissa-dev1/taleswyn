@@ -1,0 +1,17 @@
+.main {
+}
+
+.withPaddingTop {
+  padding-top: var(--navbar-height);
+}
+
+.withAnimation {
+  animation: fadeInAnim 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+  }
+}

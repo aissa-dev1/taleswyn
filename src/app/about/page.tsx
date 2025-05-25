@@ -5,12 +5,13 @@ import styles from "./page.module.scss";
 import { CompactContainer } from "@/components/ui/Container";
 import { H1, H3, P } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
+import { Main } from "@/components/Main";
 
 import about from "@/data/about.json";
 
 export default function About() {
   return (
-    <main className={styles.main}>
+    <Main>
       <CompactContainer spacing="lg" withPaddingBlock>
         <H1 className={styles.headline}>About Us</H1>
         <P size="xl" className={styles.tagline}>
@@ -43,6 +44,6 @@ export default function About() {
           </Link>
         </div>
       </CompactContainer>
-    </main>
+    </Main>
   );
 }

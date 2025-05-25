@@ -3,6 +3,7 @@ import clsx from "clsx";
 import styles from "./SettingsCard.module.scss";
 
 import { Label } from "@/components/ui/Label";
+import { Separator } from "@/components/ui/Separator";
 
 interface Props {
   direction?: "col" | "row";
@@ -18,15 +19,18 @@ const SettingsCardItem: React.FC<Props> = ({
   children,
 }) => {
   return (
-    <div
-      className={clsx(
-        styles.cardItem,
-        direction === "row" ? styles.cardItemRow : styles.cardItemCol
-      )}
-    >
-      <Label htmlFor={labelHtmlFor}>{label}</Label>
-      <div>{children}</div>
-    </div>
+    <>
+      <div
+        className={clsx(
+          styles.cardItem,
+          direction === "row" ? styles.cardItemRow : styles.cardItemCol
+        )}
+      >
+        <Label htmlFor={labelHtmlFor}>{label}</Label>
+        <div>{children}</div>
+      </div>
+      <Separator className={styles.cardItemSeparator} />
+    </>
   );
 };
 

@@ -1,37 +1,50 @@
 [
   {
-    "_id": "tale_they_never_listened",
-    "name": "They never listened",
-    "slug": "they-never-listened",
-    "description": "A quiet observer speaks words unheard, thoughts unshared. A reflection on loneliness in familiar spaces, the weight of silence, and the irony of being called \"quiet\" by those who never truly listen.",
+    "_id": "tale_ashes_of_the_hollow_king",
+    "name": "Ashes of the Hollow King",
+    "slug": "ashes-of-the-hollow-king",
+    "description": "In the dying embers of a cursed kingdom, a forgotten heir must traverse haunted ruins to reclaim his soul and shatter a crown forged in agony.",
     "about": [
-      "This introspective tale explores the disconnect between outward perception and inner experience. The narrator, often labeled as \"quiet,\" reveals how they actively listen and observe, yet struggle to be heard in return. Surrounded by people they’ve known for years, they still feel invisible, their words met with indifference, their presence fading into the background. The piece wrestles with self-doubt (\"Maybe I’m boring\"), the habit of self-blame, and the quiet resignation to being misunderstood. Ultimately, it’s a poignant commentary on how silence can be louder than noise, and how being labeled \"quiet\" often says more about others’ inability to listen."
+      "A desolate realm ruled by the undead.",
+      "A crown that feeds on blood and memory.",
+      "A lone heir raised among witches."
     ],
-    "preview": ["They say I’m quiet. They don’t know I’m listening."],
+    "preview": [
+      "The wind howled through broken spires, echoing the king’s last scream.",
+      "He stood before the obsidian throne, heart pounding with inherited dread.",
+      "Beneath the ash, bones whispered his name."
+    ],
     "content": [
-      "They say I’m quiet.",
-      "They don’t know I’m listening.",
-      "They don’t hear what I hear.",
-      "I sit in a room with people I’ve known for years.",
-      "Still feels like I’m not part of it.",
-      "I laugh at their jokes, I nod when they talk.",
-      "Then I talk.",
-      "And no one reacts.",
-      "Maybe I’m boring. Maybe I’m not.",
-      "Maybe I’m just talking to fill the silence I feel.",
-      "Or maybe it’s my fault, I always think it’s my fault.",
-      "There’s a part of me that says, \"Let it go.\"",
-      "Let things be what they are.",
-      "Like always, I listen to that voice.",
-      "A voice where there’s everything, but no noise.",
-      "I sat there, like I always do.",
-      "I said something. Then went quiet again.",
-      "It happens a lot.",
-      "They say I’m quiet.",
-      "But they never really listened."
+      "Long ago, King Malgrave of Thorns sealed his humanity in a black crown, gaining immortality at the cost of his people's souls. Now, the Hollow Throne stands empty, guarded by specters bound to the iron oaths of forgotten ages.",
+      "Eryndor, the last blood-born of the royal line, returns to the forsaken city of Velkarra. Raised by outcast witches, he alone knows the rituals to cleanse the crown.",
+      "As he journeys through the ruins, Eryndor must face ghastly relics of his ancestors, sentient relics, and the whispering madness of the crown itself. In the end, he must choose: destroy the Hollow Crown and his lineage, or take the throne and lose his soul forever."
     ],
-    "genre": ["Loneliness"],
-    "coverImage": "/cover-images/they-never-listened.png",
-    "createdAt": "2025-05-23T00:00:00.000Z"
+    "genre": ["Dark Fantasy", "Gothic", "Horror"],
+    "coverImage": "/cover-images/ashes_of_the_hollow_king.png",
+    "createdAt": "2025-05-28T10:00:00Z"
+  },
+  {
+    "_id": "tale_the_orchard_of_veins",
+    "name": "The Orchard of Veins",
+    "slug": "orchard-of-veins",
+    "description": "A cursed orchard grows where a village once stood. Its trees bear fruit shaped like human hearts—and they whisper secrets that should never be known.",
+    "about": [
+      "An orchard born from blood and betrayal.",
+      "A botanist obsessed with forbidden growth.",
+      "A pact sealed with flesh and root."
+    ],
+    "preview": [
+      "The apple pulsed in her hand like a newborn heart.",
+      "Roots twisted around her legs, dragging her closer to the soil’s hunger.",
+      "Each bite unraveled a memory that was never hers."
+    ],
+    "content": [
+      "When the village of Fenmor vanished overnight, only an orchard remained. Locals whisper that the trees are fed by something darker than rain.",
+      "Dr. Naevia Quell, a defrocked scholar of herbal magics, is drawn to the place by rumors of regenerative fruit. What she finds instead are roots that remember the dead and fruits that weep tears.",
+      "As the orchard reshapes her body and mind, Naevia uncovers its origin: a ritual of old blood magic where villagers were planted as seeds. Now, to leave, she must prune the orchard’s heart—or become part of its eternal bloom."
+    ],
+    "genre": ["Dark Fantasy", "Folk Horror", "Mystery"],
+    "coverImage": "/cover-images/the_orchard_of_veins.png",
+    "createdAt": "2025-05-29T10:10:00Z"
   }
 ]

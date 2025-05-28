@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import { Suspense } from "react";
+import Image from "next/image";
 
 import styles from "./page.module.scss";
 
@@ -21,16 +22,16 @@ export const dynamic = "force-dynamic";
 export default function Home() {
   return (
     <Main withPaddingTop={false}>
-      <Container withPaddingBlock withContentSpacing>
+      <Container className={styles.section} withPaddingBlock withContentSpacing>
         <div className={styles.hero}>
           <HeroCanvasLazy />
           <div className={styles.heroContent}>
             <H1 transform="capitalize" variant="primary">
-              Discover unforgettable tales
+              Dark fantasy tales
             </H1>
-            <P>Read, imagine, and escape into worlds beyond your own.</P>
+            <P>Wander through whispers of forgotten realms and fallen kings.</P>
             <Link href="/t" className={styles.exploreLink}>
-              <Button size="full">Explore Tales</Button>
+              <Button size="full">Enter the Realms</Button>
             </Link>
           </div>
         </div>
@@ -40,10 +41,7 @@ export default function Home() {
           </Suspense>
         </ErrorBoundary>
       </Container>
-      <CompactContainer
-        className={styles.quoteOfTheDayWrapper}
-        withPaddingBlock
-      >
+      <CompactContainer className={styles.section} withPaddingBlock>
         <QuoteOfTheDaySection />
       </CompactContainer>
     </Main>

@@ -67,12 +67,12 @@ const Tale: React.FC<Props> = ({
         <div className={styles.actions}>
           {shouldShowExploreLink && (
             <Link href={`/t/${slug}`} className={styles.actionLink}>
-              <Button>Explore</Button>
+              <Button>Enter the World</Button>
             </Link>
           )}
           {shouldShowReadButton && (
             <Link href={`/t/${slug}/read`}>
-              <Button>Read</Button>
+              <Button>Begin Reading</Button>
             </Link>
           )}
         </div>

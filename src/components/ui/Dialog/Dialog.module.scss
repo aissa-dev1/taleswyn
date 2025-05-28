@@ -16,7 +16,6 @@
   position: relative;
   background-color: var(--card);
   color: var(--card-foreground);
-  border-radius: var(--radius-rounded);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   width: 90%;
@@ -31,7 +30,7 @@
 
 .dialogDescription {
   font-size: 0.875rem;
-  color: var(--gray-foreground);
+  color: var(--foreground-muted);
   margin-bottom: 1.5rem;
 }
 

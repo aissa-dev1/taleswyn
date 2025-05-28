@@ -35,7 +35,6 @@ const Navbar: React.FC<Props> = () => {
           </div>
           <div className={styles.searchAndThemeContainer}>
             <NavbarSearch />
-            <ThemeToggle />
           </div>
         </div>
       </Container>

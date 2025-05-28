@@ -35,7 +35,7 @@ const FeaturedTalesSection: React.FC<Props> = ({ tales }) => {
         </div>
         <div className={styles.talesExploreMoreContainer}>
           <Link href="/t" className={styles.exploreLink}>
-            <Button size="full">Explore More</Button>
+            <Button size="full">Browse All Realms</Button>
           </Link>
         </div>
       </Show>

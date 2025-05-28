@@ -12,7 +12,6 @@ import { EmptyState } from "@/components/EmptyState";
 import { SeparatorHighlighter } from "@/components/SeparatorHighlighter";
 import { ToggleNavbarFixed } from "@/components/Navbar";
 import { BackTopButton } from "@/components/buttons";
-import { SupportMeCardLazy } from "@/components/cards/SupportMeCard/SupportMeCardLazy";
 import { Main } from "@/components/Main";
 
 import { getAllTales, getTaleBySlug } from "@/lib/data/tale";
@@ -63,7 +62,6 @@ export default async function ReadTalePage(props: Props) {
               ))}
             </div>
           </Show>
-          <SupportMeCardLazy />
           <BackTopButton />
         </CompactContainer>
       </Main>

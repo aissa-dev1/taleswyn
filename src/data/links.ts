@@ -24,10 +24,6 @@ const navBarLinks: LinkType[] = [
     name: "Settings",
     href: "/settings",
   },
-  {
-    name: "Support 💜",
-    href: "/support",
-  },
 ];
 
 const footerLinks: LinkType[] = [

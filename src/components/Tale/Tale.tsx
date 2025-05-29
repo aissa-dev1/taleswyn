@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 import dayjs from "dayjs";
+import { CalendarIcon } from "lucide-react";
 
 import styles from "./Tale.module.scss";
 
@@ -9,7 +10,6 @@ import { Card, CardDescription, CardTitle } from "../ui/Card";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { Stats } from "../Stats";
-import { CalendarIcon } from "lucide-react";
 
 interface TaleType {
   _id: string;
@@ -17,7 +17,6 @@ interface TaleType {
   slug: string;
   description: string;
   about: string[];
-  preview: string[];
   content: string[];
   genre: string[];
   coverImage: string;

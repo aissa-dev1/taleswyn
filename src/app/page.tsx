@@ -1,19 +1,11 @@
 import Link from "next/link";
-import { ErrorBoundary } from "next/dist/client/components/error-boundary";
-import { Suspense } from "react";
-import Image from "next/image";
 
 import styles from "./page.module.scss";
 
 import { Button } from "@/components/ui/Button";
 import { H1, P } from "@/components/ui/Typography";
 import { CompactContainer, Container } from "@/components/ui/Container";
-import {
-  FeaturedSection,
-  FeaturedSectionError,
-  FeaturedSectionLoading,
-  QuoteOfTheDaySection,
-} from "@/components/sections";
+import { FeaturedSection, QuoteOfTheDaySection } from "@/components/sections";
 import { HeroCanvasLazy } from "@/components/HeroCanvas/HeroCanvasLazy";
 import { Main } from "@/components/Main";
 
@@ -35,11 +27,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <ErrorBoundary errorComponent={FeaturedSectionError}>
-          <Suspense fallback={<FeaturedSectionLoading />}>
-            <FeaturedSection />
-          </Suspense>
-        </ErrorBoundary>
+        <FeaturedSection />
       </Container>
       <CompactContainer className={styles.section} withPaddingBlock>
         <QuoteOfTheDaySection />

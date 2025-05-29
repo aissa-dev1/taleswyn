@@ -8,6 +8,7 @@ import { Show } from "@/components/Show";
 import { EmptyState } from "@/components/EmptyState";
 import { Tale, TaleType } from "@/components/Tale";
 import { Button } from "@/components/ui/Button";
+import { FeaturedTalesSectionCarousel } from "./FeaturedTalesSectionCarousel";
 
 interface Props {
   tales: TaleType[];
@@ -28,11 +29,7 @@ const FeaturedTalesSection: React.FC<Props> = ({ tales }) => {
           />
         }
       >
-        <div className={styles.talesList}>
-          {tales.map((tale) => (
-            <Tale key={tale._id} {...tale} />
-          ))}
-        </div>
+        <FeaturedTalesSectionCarousel tales={tales} />
         <div className={styles.talesExploreMoreContainer}>
           <Link href="/t" className={styles.exploreLink}>
             <Button size="full">Browse All Realms</Button>

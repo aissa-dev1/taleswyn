@@ -10,10 +10,19 @@
   gap: var(--spacing-lg);
 }
 
-.talesList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+.carouselSlide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 0 0.5rem;
+
+  @media (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: 992px) {
+    flex: 0 0 33.33%;
+  }
 }
 
 .talesExploreMoreContainer {

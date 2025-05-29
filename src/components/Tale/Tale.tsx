@@ -57,7 +57,6 @@ const Tale: React.FC<Props> = ({
           alt={`${name} Cover`}
           width={175}
           height={200}
-          style={{ objectFit: "cover" }}
         />
       </div>
       <div className={styles.content}>

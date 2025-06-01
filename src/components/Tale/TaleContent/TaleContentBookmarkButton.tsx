@@ -18,6 +18,12 @@ const TaleContentBookmarkButton: React.FC<Props> = ({
   contentIndex,
 }) => {
   const bookmarkContent = useTaleReadStore((s) => s.bookmarkContent);
+  const bookmarkedContentCardActive = useTaleReadStore(
+    (s) => s.bookmarkedContentCardActive
+  );
+  const setBookmarkedContentCardActive = useTaleReadStore(
+    (s) => s.setBookmarkedContentCardActive
+  );
   const addToast = useToastStore((s) => s.addToast);
   const [bookmarked, setBookmarked] = useState(false);
   const bookmarkTimout = useRef<NodeJS.Timeout>(null!);
@@ -25,6 +31,11 @@ const TaleContentBookmarkButton: React.FC<Props> = ({
   function handleBookmark() {
     bookmarkContent({ taleId, contentText, contentIndex });
     setBookmarked(true);
+
+    if (!bookmarkedContentCardActive) {
+      setBookmarkedContentCardActive(true);
+    }
+
     addToast({
       title: "Done",
       description: "Tale content bookmarked successfully.",

@@ -1,52 +1,202 @@
 [
   {
     "id": "1",
-    "quote": "Tales are maps. Not to places — but to hearts.",
-    "author": "Unknown"
+    "quote": "A tale is not escape, but invocation—a spell to summon what the waking world denies."
   },
   {
     "id": "2",
-    "quote": "There is no greater agony than bearing an untold tale inside you.",
-    "author": "Unknown"
+    "quote": "Imagination is no mere fancy; it is the wound through which other worlds bleed."
   },
   {
     "id": "3",
-    "quote": "A tale is a lens that sharpens the unseen.",
-    "author": "Unknown"
+    "quote": "Every story is a candle in the void, and the void is always listening."
   },
   {
     "id": "4",
-    "quote": "Imagination is the gateway to all realities.",
-    "author": "Unknown"
+    "quote": "To dream is to trespass—on lands where gods fell and monsters still remember."
   },
   {
     "id": "5",
-    "quote": "Words are, in my not-so-humble opinion, our most inexhaustible source of magic.",
-    "author": "Unknown"
+    "quote": "Ink is the blood of forgotten realms, and the page their tombstone."
   },
   {
     "id": "6",
-    "quote": "A good tale can transport you beyond the stars, or into your own soul.",
-    "author": "Unknown"
+    "quote": "Reality is but one throne in a kingdom of countless shadows."
   },
   {
     "id": "7",
-    "quote": "Every tale whispered in silence shapes the world around us.",
-    "author": "Unknown"
+    "quote": "The mind is a gate of bone and thought—open it, and let the ancient ones speak."
   },
   {
     "id": "8",
-    "quote": "The shortest distance between two souls is a tale well told.",
-    "author": "Unknown"
+    "quote": "A lie, told well enough, becomes a mirror into a world that once might have been."
   },
   {
     "id": "9",
-    "quote": "Escape is not the end; it's the beginning of a new chapter.",
-    "author": "Unknown"
+    "quote": "We do not conjure stories—they conjure us, and bind us in chains of wonder."
   },
   {
     "id": "10",
-    "quote": "In the art of storytelling, we become both painter and canvas.",
-    "author": "Unknown"
+    "quote": "Some truths wear masks of myth, for to see them naked would unmake the soul."
+  },
+  {
+    "id": "11",
+    "quote": "The oldest magic is not cast, but told—hidden in verses no mortal dares finish."
+  },
+  {
+    "id": "12",
+    "quote": "Where reality ends, memory begins—etched in the marrow of things that should not be."
+  },
+  {
+    "id": "13",
+    "quote": "To write is to bleed into a world that never wanted you whole."
+  },
+  {
+    "id": "14",
+    "quote": "Some books do not teach—they awaken, and once awake, they do not sleep again."
+  },
+  {
+    "id": "15",
+    "quote": "In the silence between pages, something waits with a thousand unwritten eyes."
+  },
+  {
+    "id": "16",
+    "quote": "Imagination is the final rebellion—against death, against gods, against the end."
+  },
+  {
+    "id": "17",
+    "quote": "The tongue tells stories, but the soul listens for the ones that remember it."
+  },
+  {
+    "id": "18",
+    "quote": "Even shadows cast shadows in the deeper dark."
+  },
+  {
+    "id": "19",
+    "quote": "Not all echoes fade; some become voices of their own, hungry for ears."
+  },
+  {
+    "id": "20",
+    "quote": "The tale you fear to tell is the one the night already knows."
+  },
+  {
+    "id": "21",
+    "quote": "The stars are not lights, but locks—each guarding a secret too vast to name."
+  },
+  {
+    "id": "22",
+    "quote": "Every myth begins as truth, buried beneath centuries of silence and ash."
+  },
+  {
+    "id": "23",
+    "quote": "The quill is a blade, and each sentence cuts deeper into the veil."
+  },
+  {
+    "id": "24",
+    "quote": "Time does not forget—it simply waits for its debts to be paid in full."
+  },
+  {
+    "id": "25",
+    "quote": "There are doors in the mind best left unopened, for some lead inward forever."
+  },
+  {
+    "id": "26",
+    "quote": "What you call fantasy, the old ones called memory."
+  },
+  {
+    "id": "27",
+    "quote": "To listen to a tale is to risk becoming a character in it."
+  },
+  {
+    "id": "28",
+    "quote": "Truth wears many faces, but lies... lies wear none."
+  },
+  {
+    "id": "29",
+    "quote": "When the ink runs dry, blood writes the final chapter."
+  },
+  {
+    "id": "30",
+    "quote": "In forgotten libraries, the books whisper to each other in dead languages."
+  },
+  {
+    "id": "31",
+    "quote": "The dreamer walks the edge of realms, where sanity and sorcery trade places in the dark."
+  },
+  {
+    "id": "32",
+    "quote": "Even the void has memories—it weeps them as stars."
+  },
+  {
+    "id": "33",
+    "quote": "There are questions that do not seek answers, only openings."
+  },
+  {
+    "id": "34",
+    "quote": "Not all who vanish are lost—some become legends too wild to return."
+  },
+  {
+    "id": "35",
+    "quote": "They buried the king without a tongue, for even in death, his words burned worlds."
+  },
+  {
+    "id": "36",
+    "quote": "The deeper the silence, the older the god that listens."
+  },
+  {
+    "id": "37",
+    "quote": "Fate is a beast fed by choices we dare not remember."
+  },
+  {
+    "id": "38",
+    "quote": "The mirror does not reflect—it remembers."
+  },
+  {
+    "id": "39",
+    "quote": "You cannot slay prophecy—it bleeds through time like ink in water."
+  },
+  {
+    "id": "40",
+    "quote": "Her lullabies woke bones buried beneath the sea."
+  },
+  {
+    "id": "41",
+    "quote": "There is no such thing as fiction—only truths wearing cloaks."
+  },
+  {
+    "id": "42",
+    "quote": "The gods feared the first storyteller, for she spoke of their end."
+  },
+  {
+    "id": "43",
+    "quote": "Some castles are built not of stone, but of sorrow layered through centuries."
+  },
+  {
+    "id": "44",
+    "quote": "The forest does not whisper—it judges."
+  },
+  {
+    "id": "45",
+    "quote": "Magic is not learned—it remembers who you were before you were born."
+  },
+  {
+    "id": "46",
+    "quote": "The parchment screamed as she wrote—some truths resist being told."
+  },
+  {
+    "id": "47",
+    "quote": "He carried no weapon, only a name feared by steel."
+  },
+  {
+    "id": "48",
+    "quote": "What the moon reveals, the sun denies."
+  },
+  {
+    "id": "49",
+    "quote": "Some legends are traps, waiting for the next fool to believe them."
+  },
+  {
+    "id": "50",
+    "quote": "When you stare long enough into myth, it begins to write you."
   }
 ]

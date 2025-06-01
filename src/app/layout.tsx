@@ -4,7 +4,6 @@ import "./globals.scss";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ThemeProvider } from "@/components/Theme";
 import { ToastProvider } from "@/components/providers";
 import { Toast, ToastViewport } from "@/components/ui/Toast";
 
@@ -25,14 +24,12 @@ export default function RootLayout({
       </head>
       <body>
         <ToastProvider>
-          <ThemeProvider>
-            <Toast>
-              <Navbar />
-              {children}
-              <Footer />
-              <ToastViewport />
-            </Toast>
-          </ThemeProvider>
+          <Toast>
+            <Navbar />
+            {children}
+            <Footer />
+            <ToastViewport />
+          </Toast>
         </ToastProvider>
       </body>
     </html>

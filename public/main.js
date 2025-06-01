@@ -16,4 +16,4 @@ function start() {
   applySavedTheme();
 }
 
-start();
+// start();

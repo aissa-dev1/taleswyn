@@ -1,5 +1,3 @@
-@use "@/styles/mixins" as mixins;
-
 $cardPadding: var(--spacing-md);
 
 .card {
@@ -67,18 +65,4 @@ $cardPadding: var(--spacing-md);
   position: absolute;
   top: 0.5rem;
   right: 0.25rem;
-}
-
-@include mixins.media(sm) {
-  .closeButton {
-    top: 1rem;
-    right: 0.75rem;
-  }
-}
-
-@include mixins.media(md) {
-  .closeButton {
-    top: 2rem;
-    right: 1.5rem;
-  }
 }

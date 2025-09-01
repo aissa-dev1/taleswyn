@@ -1,8 +1,6 @@
 import styles from "./BuyMeCoffeButton.module.scss";
 
-interface Props {}
-
-const BuyMeCoffeButton: React.FC<Props> = () => {
+function BuyMeCoffeButton() {
   return (
     <a
       href="https://ko-fi.com/B0B6127DWV"
@@ -17,6 +15,6 @@ const BuyMeCoffeButton: React.FC<Props> = () => {
       />
     </a>
   );
-};
+}
 
 export { BuyMeCoffeButton };

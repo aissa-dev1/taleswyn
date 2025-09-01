@@ -7,12 +7,10 @@ import { NavbarSearchDialog } from "./NavbarSearchDialog";
 
 import { useIsMobile } from "@/hooks/media";
 
-interface Props {}
-
-const NavbarSearch: React.FC<Props> = () => {
+function NavbarSearch() {
   const isMobile = useIsMobile();
 
   return isMobile ? <NavbarSearchDrawer /> : <NavbarSearchDialog />;
-};
+}
 
 export { NavbarSearch };

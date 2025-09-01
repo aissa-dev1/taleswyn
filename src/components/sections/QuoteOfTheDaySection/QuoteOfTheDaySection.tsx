@@ -5,9 +5,7 @@ import { QuoteBlock } from "@/components/QuoteBlock";
 
 import quotes from "@/data/quotes.json";
 
-interface Props {}
-
-const QuoteOfTheDaySection: React.FC<Props> = () => {
+function QuoteOfTheDaySection() {
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
@@ -18,6 +16,6 @@ const QuoteOfTheDaySection: React.FC<Props> = () => {
       <QuoteBlock quote={quote} />
     </div>
   );
-};
+}
 
 export { QuoteOfTheDaySection };

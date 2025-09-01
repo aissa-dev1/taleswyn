@@ -5,12 +5,12 @@ import styles from "./Input.module.scss";
 
 import { InputVariant } from ".";
 
-interface Props extends ComponentProps<"textarea"> {
+type Props = ComponentProps<"textarea"> & {
   label: string;
   variant?: InputVariant;
-}
+};
 
-const Textarea: React.FC<Props> = ({ className, label, variant, ...rest }) => {
+function Textarea({ className, label, variant, ...rest }: Props) {
   return (
     <div className={styles.inputContainer}>
       <textarea
@@ -32,6 +32,6 @@ const Textarea: React.FC<Props> = ({ className, label, variant, ...rest }) => {
       </label>
     </div>
   );
-};
+}
 
 export { Textarea };

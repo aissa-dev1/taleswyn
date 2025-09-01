@@ -10,11 +10,11 @@ import { Button } from "@/components/ui/Button";
 import { useSearchStore } from "@/stores/search";
 import { ActionSlot } from "@/components/ActionSlot";
 
-interface Props {
+type Props = {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+};
 
-const NavbarSearchContent: React.FC<Props> = ({ setOpen }) => {
+function NavbarSearchContent({ setOpen }: Props) {
   const pathName = usePathname();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -27,14 +27,20 @@ const NavbarSearchContent: React.FC<Props> = ({ setOpen }) => {
   ) {
     e.preventDefault();
 
-    if (typeof callback === "function") callback();
-    if (query === searchParams.get("q")) return;
+    if (typeof callback === "function") {
+      callback();
+    }
+    if (query === searchParams.get("q")) {
+      return;
+    }
 
     if (pathName === "/t") {
       const params = new URLSearchParams(searchParams);
       params.set("q", query);
       router.replace(`/t?${params.toString()}`);
-    } else router.push(`/t?q=${query}`);
+    } else {
+      router.push(`/t?q=${query}`);
+    }
   }
 
   return (
@@ -53,6 +59,6 @@ const NavbarSearchContent: React.FC<Props> = ({ setOpen }) => {
       </ActionSlot>
     </form>
   );
-};
+}
 
 export { NavbarSearchContent };

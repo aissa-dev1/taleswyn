@@ -3,10 +3,10 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-interface StoreState {
+type StoreState = {
   showSupportMeCard: boolean;
   setShowSupportMeCard(show: boolean): void;
-}
+};
 
 const useSettingsStore = create(
   persist<StoreState>(

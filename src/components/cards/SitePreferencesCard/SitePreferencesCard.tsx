@@ -3,9 +3,7 @@ import styles from "./SitePreferencesCard.module.scss";
 import { SettingsCard, SettingsCardItem } from "../SettingsCard";
 import { SupportMeCardSwitch } from "../SupportMeCard";
 
-interface Props {}
-
-const SitePreferencesCard: React.FC<Props> = () => {
+function SitePreferencesCard() {
   return (
     <SettingsCard
       title="Site Preferences"
@@ -19,6 +17,6 @@ const SitePreferencesCard: React.FC<Props> = () => {
       </SettingsCardItem>
     </SettingsCard>
   );
-};
+}
 
 export { SitePreferencesCard };

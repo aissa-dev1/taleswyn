@@ -2,9 +2,7 @@
 
 import { useEffect } from "react";
 
-interface Props {}
-
-const SeparatorHighlighter: React.FC<Props> = () => {
+function SeparatorHighlighter() {
   useEffect(() => {
     const separators = document.querySelectorAll('[role="separator"]');
 
@@ -27,6 +25,6 @@ const SeparatorHighlighter: React.FC<Props> = () => {
   }, []);
 
   return null;
-};
+}
 
 export { SeparatorHighlighter };

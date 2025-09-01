@@ -9,9 +9,9 @@ import { LibraryLoadMoreButton } from "@/components/buttons";
 
 import { getLibraryTales, GetLibraryTalesQuery } from "@/lib/data/tale";
 
-interface Props extends GetLibraryTalesQuery {}
+type Props = GetLibraryTalesQuery;
 
-const LibraryTalesSection: React.FC<Props> = (props) => {
+function LibraryTalesSection(props: Props) {
   const libraryTalesResponse = getLibraryTales({
     skip: props.skip,
     limit: props.limit,
@@ -31,7 +31,12 @@ const LibraryTalesSection: React.FC<Props> = (props) => {
     >
       <div className={styles.tales}>
         {libraryTalesResponse.data.map((tale) => (
-          <Tale key={tale._id} className={styles.tale} {...tale} />
+          <Tale
+            key={tale._id}
+            className={styles.tale}
+            {...tale}
+            shouldShowReadButton={true}
+          />
         ))}
       </div>
       <LibraryLoadMoreButton
@@ -40,6 +45,6 @@ const LibraryTalesSection: React.FC<Props> = (props) => {
       />
     </Show>
   );
-};
+}
 
 export { LibraryTalesSection };

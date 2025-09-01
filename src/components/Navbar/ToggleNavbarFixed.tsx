@@ -2,19 +2,21 @@
 
 import { useEffect } from "react";
 
-interface Props {
+type Props = {
   toggleTo?: boolean;
   toggleBackOnUnMount?: boolean;
-}
+};
 
-const ToggleNavbarFixed: React.FC<Props> = ({
+function ToggleNavbarFixed({
   toggleTo = false,
   toggleBackOnUnMount = true,
-}) => {
+}: Props) {
   useEffect(() => {
     const navBar = document.querySelector("[data-nav-fixed]");
 
-    if (!(navBar instanceof Element)) return;
+    if (!(navBar instanceof Element)) {
+      return;
+    }
 
     navBar.setAttribute("data-nav-fixed", String(toggleTo));
 
@@ -26,6 +28,6 @@ const ToggleNavbarFixed: React.FC<Props> = ({
   }, []);
 
   return null;
-};
+}
 
 export { ToggleNavbarFixed };

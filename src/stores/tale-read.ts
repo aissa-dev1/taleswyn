@@ -3,14 +3,14 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-interface BookmarkedContent {
+type BookmarkedContent = {
   id?: string;
   taleId: string;
   contentText: string;
   contentIndex: number;
-}
+};
 
-interface StoreState {
+type StoreState = {
   fontSize: string;
   contentNumeralsActive: boolean;
   contentRomanNumeralsActive: boolean;
@@ -21,7 +21,7 @@ interface StoreState {
   setContentRomanNumeralsActive(active: boolean): void;
   bookmarkContent(content: BookmarkedContent): void;
   setBookmarkedContentCardActive(active: boolean): void;
-}
+};
 
 const useTaleReadStore = create(
   persist<StoreState>(

@@ -8,13 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/Card";
 
-interface Props {
+type Props = {
   title: string;
   description: string;
   children: React.ReactNode;
-}
+};
 
-const SettingsCard: React.FC<Props> = ({ title, description, children }) => {
+function SettingsCard({ title, description, children }: Props) {
   return (
     <Card>
       <CardHeader>
@@ -24,6 +24,6 @@ const SettingsCard: React.FC<Props> = ({ title, description, children }) => {
       <CardContent className={styles.cardContent}>{children}</CardContent>
     </Card>
   );
-};
+}
 
 export { SettingsCard };

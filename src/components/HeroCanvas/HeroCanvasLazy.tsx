@@ -9,10 +9,8 @@ const HeroCanvas = dynamic(
   }
 );
 
-interface Props {}
-
-const HeroCanvasLazy: React.FC<Props> = () => {
+function HeroCanvasLazy() {
   return <HeroCanvas />;
-};
+}
 
 export { HeroCanvasLazy };

@@ -7,11 +7,11 @@ import styles from "./BackTopButton.module.scss";
 
 import { Button } from "@/components/ui/Button";
 
-interface Props {
+type Props = {
   maxScrollY?: number;
-}
+};
 
-const BackTopButton: React.FC<Props> = ({ maxScrollY = 2500 }) => {
+function BackTopButton({ maxScrollY = 2500 }: Props) {
   const [visible, setVisible] = useState(false);
   const scrollTimeout = useRef<NodeJS.Timeout>(null);
   const scrollTimeoutMS = 300;
@@ -28,7 +28,9 @@ const BackTopButton: React.FC<Props> = ({ maxScrollY = 2500 }) => {
     scrollTimeout.current = setTimeout(() => {
       if (window.scrollY >= maxScrollY) {
         setVisible(true);
-      } else setVisible(false);
+      } else {
+        setVisible(false);
+      }
     }, scrollTimeoutMS);
   }
 
@@ -44,7 +46,9 @@ const BackTopButton: React.FC<Props> = ({ maxScrollY = 2500 }) => {
     };
   }, []);
 
-  if (!visible) return null;
+  if (!visible) {
+    return null;
+  }
 
   return (
     <div className={styles.container}>
@@ -53,6 +57,6 @@ const BackTopButton: React.FC<Props> = ({ maxScrollY = 2500 }) => {
       </Button>
     </div>
   );
-};
+}
 
 export { BackTopButton };

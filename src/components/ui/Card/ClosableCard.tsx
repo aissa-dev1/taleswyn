@@ -7,18 +7,20 @@ import { Card, CardProps } from "./Card";
 
 import styles from "./Card.module.scss";
 
-interface Props extends CardProps {
+type Props = CardProps & {
   active?: boolean;
   onActiveChange?(active: boolean): void;
-}
+};
 
-const ClosableCard: React.FC<Props> = ({
+function ClosableCard({
   active = true,
   onActiveChange,
   children,
   ...rest
-}) => {
-  if (!active) return null;
+}: Props) {
+  if (!active) {
+    return null;
+  }
 
   return (
     <Card {...rest}>
@@ -34,6 +36,6 @@ const ClosableCard: React.FC<Props> = ({
       </Button>
     </Card>
   );
-};
+}
 
 export { ClosableCard };

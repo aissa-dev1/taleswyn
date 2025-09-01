@@ -4,9 +4,7 @@ import { Switch } from "@/components/ui/Switch";
 
 import { useTaleReadStore } from "@/stores/tale-read";
 
-interface Props {}
-
-const TaleContentRomanNumeralsSwitch: React.FC<Props> = () => {
+function TaleContentRomanNumeralsSwitch() {
   const contentRomanNumeralsActive = useTaleReadStore(
     (s) => s.contentRomanNumeralsActive
   );
@@ -21,6 +19,6 @@ const TaleContentRomanNumeralsSwitch: React.FC<Props> = () => {
       onCheckedChange={(v) => setContentRomanNumeralsActive(v)}
     />
   );
-};
+}
 
 export { TaleContentRomanNumeralsSwitch };

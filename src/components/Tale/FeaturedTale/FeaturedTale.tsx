@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 
-interface Props {
+type Props = {
   tale: TaleType;
-}
+};
 
-const FeaturedTale: React.FC<Props> = ({ tale }) => {
+function FeaturedTale({ tale }: Props) {
   return (
     <Card className={styles.card}>
       <div className={styles.imageWrapper}>
@@ -36,6 +36,6 @@ const FeaturedTale: React.FC<Props> = ({ tale }) => {
       </CardContent>
     </Card>
   );
-};
+}
 
 export { FeaturedTale };

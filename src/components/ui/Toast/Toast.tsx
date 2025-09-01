@@ -47,10 +47,11 @@ const ToastTitle = React.forwardRef<
 ));
 ToastTitle.displayName = ToastPrimitive.Title.displayName;
 
-interface ToastDescriptionProps
-  extends React.ComponentPropsWithoutRef<typeof ToastPrimitive.Description> {
+type ToastDescriptionProps = React.ComponentPropsWithoutRef<
+  typeof ToastPrimitive.Description
+> & {
   variant?: ToastVariant;
-}
+};
 
 const ToastDescription = React.forwardRef<
   React.ElementRef<typeof ToastPrimitive.Description>,

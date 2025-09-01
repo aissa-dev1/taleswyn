@@ -5,17 +5,12 @@ import styles from "./Input.module.scss";
 
 type InputVariant = "default" | "destructive";
 
-interface Props extends Omit<ComponentProps<"input">, "size"> {
+type Props = Omit<ComponentProps<"input">, "size"> & {
   label: string;
   variant?: InputVariant;
-}
+};
 
-const Input: React.FC<Props> = ({
-  className,
-  label,
-  variant = "default",
-  ...rest
-}) => {
+function Input({ className, label, variant = "default", ...rest }: Props) {
   return (
     <div className={styles.inputContainer}>
       <input
@@ -37,6 +32,6 @@ const Input: React.FC<Props> = ({
       </label>
     </div>
   );
-};
+}
 
 export { Input, type InputVariant };

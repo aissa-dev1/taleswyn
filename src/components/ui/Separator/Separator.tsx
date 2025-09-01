@@ -1,14 +1,13 @@
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
+import clsx from "clsx";
 
 import styles from "./Separator.module.scss";
-
-import clsx from "clsx";
 
 type SeparatorWeight = "normal" | "medium" | "semi-bold" | "";
 
 type SeparatorVariant = "default" | "primary";
 
-interface Props {
+type Props = {
   isVertical?: boolean;
   className?: string;
   lineClassname?: string;
@@ -16,9 +15,9 @@ interface Props {
   variant?: SeparatorVariant;
   horizontalSpacing?: number;
   verticalSpacing?: number;
-}
+};
 
-const Separator: React.FC<Props> = ({
+function Separator({
   isVertical = false,
   className,
   lineClassname,
@@ -26,14 +25,19 @@ const Separator: React.FC<Props> = ({
   horizontalSpacing,
   weight = "normal",
   variant = "default",
-}) => (
-  <SeparatorPrimitive.Separator
-    orientation={isVertical ? "vertical" : "horizontal"}
-    style={{ paddingInline: horizontalSpacing, paddingBlock: verticalSpacing }}
-    className={clsx(styles.base, styles[weight], className)}
-  >
-    <div className={clsx(styles.line, lineClassname, styles[variant])} />
-  </SeparatorPrimitive.Separator>
-);
+}: Props) {
+  return (
+    <SeparatorPrimitive.Separator
+      orientation={isVertical ? "vertical" : "horizontal"}
+      style={{
+        paddingInline: horizontalSpacing,
+        paddingBlock: verticalSpacing,
+      }}
+      className={clsx(styles.base, styles[weight], className)}
+    >
+      <div className={clsx(styles.line, lineClassname, styles[variant])} />
+    </SeparatorPrimitive.Separator>
+  );
+}
 
 export { Separator };

@@ -7,13 +7,10 @@ import { NavbarDrawer } from "./NavbarDrawer";
 import { P } from "../ui/Typography";
 import { Container } from "../ui/Container";
 import { NavbarSearch } from "./NavbarSearch";
-import { ThemeToggle } from "../Theme";
 
 import { navBarLinks } from "@/data/links";
 
-interface Props {}
-
-const Navbar: React.FC<Props> = () => {
+function Navbar() {
   return (
     <nav className={styles.nav} data-nav-fixed="true">
       <Container className={styles.navContainer}>
@@ -40,6 +37,6 @@ const Navbar: React.FC<Props> = () => {
       </Container>
     </nav>
   );
-};
+}
 
 export { Navbar, navBarLinks };

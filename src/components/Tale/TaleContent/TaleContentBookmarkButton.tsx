@@ -8,15 +8,15 @@ import { Button } from "@/components/ui/Button";
 import { BookmarkedContent, useTaleReadStore } from "@/stores/tale-read";
 import { useToastStore } from "@/stores/toast";
 
-interface Props extends BookmarkedContent {}
+type Props = BookmarkedContent;
 
 const BOOKMARK_DURATION_MS = 2000;
 
-const TaleContentBookmarkButton: React.FC<Props> = ({
+function TaleContentBookmarkButton({
   taleId,
   contentText,
   contentIndex,
-}) => {
+}: Props) {
   const bookmarkContent = useTaleReadStore((s) => s.bookmarkContent);
   const bookmarkedContentCardActive = useTaleReadStore(
     (s) => s.bookmarkedContentCardActive
@@ -57,6 +57,6 @@ const TaleContentBookmarkButton: React.FC<Props> = ({
       <BookmarkIcon size={20} />
     </Button>
   );
-};
+}
 
 export { TaleContentBookmarkButton };

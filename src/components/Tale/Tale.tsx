@@ -11,7 +11,7 @@ import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { Stats } from "../Stats";
 
-interface TaleType {
+type TaleType = {
   _id: string;
   name: string;
   slug: string;
@@ -21,16 +21,16 @@ interface TaleType {
   genre: string[];
   coverImage: string;
   createdAt: Date;
-}
+};
 
-interface Props extends TaleType {
+type Props = TaleType & {
   className?: string;
   shouldShowTitle?: boolean;
   shouldShowExploreLink?: boolean;
   shouldShowReadButton?: boolean;
-}
+};
 
-const Tale: React.FC<Props> = ({
+function Tale({
   _id,
   name,
   slug,
@@ -42,7 +42,7 @@ const Tale: React.FC<Props> = ({
   shouldShowTitle = true,
   shouldShowExploreLink = true,
   shouldShowReadButton = false,
-}) => {
+}: Props) {
   return (
     <Card withPadding className={clsx(styles.tale, className)}>
       <div className={styles.genre}>
@@ -87,6 +87,6 @@ const Tale: React.FC<Props> = ({
       </div>
     </Card>
   );
-};
+}
 
 export { Tale, type TaleType };

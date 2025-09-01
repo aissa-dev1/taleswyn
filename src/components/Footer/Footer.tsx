@@ -10,9 +10,7 @@ import { Button } from "../ui/Button";
 
 import { footerLinks } from "@/data/links";
 
-interface Props {}
-
-const Footer: React.FC<Props> = () => {
+function Footer() {
   return (
     <footer className={styles.footer}>
       <Container className={styles.footerContainer}>
@@ -35,7 +33,7 @@ const Footer: React.FC<Props> = () => {
         </div>
         <div className={styles.followLinks}>
           <a
-            href="https://www.instagram.com/taleswyn"
+            href={`https://www.instagram.com/${process.env.NEXT_PUBLIC_INSTA_USERNAME}`}
             target="_blank"
             className={styles.followLink}
           >
@@ -47,6 +45,6 @@ const Footer: React.FC<Props> = () => {
       </Container>
     </footer>
   );
-};
+}
 
 export { Footer };

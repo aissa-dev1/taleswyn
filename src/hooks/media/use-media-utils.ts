@@ -1,22 +1,23 @@
 "use client";
 
-import { MOBILE_MAX_WIDTH } from "@/constants/media-query";
 import { useMediaQuery } from "./use-media-query";
 
-const useMinWidth = (minWidth: number, defaultValue?: boolean): boolean => {
+import { MOBILE_MAX_WIDTH } from "@/constants/media-query";
+
+function useMinWidth(minWidth: number, defaultValue?: boolean): boolean {
   return useMediaQuery(`(min-width: ${minWidth}px)`, { defaultValue });
-};
+}
 
-const useMaxWidth = (maxWidth: number, defaultValue?: boolean): boolean => {
+function useMaxWidth(maxWidth: number, defaultValue?: boolean): boolean {
   return useMediaQuery(`(max-width: ${maxWidth}px)`, { defaultValue });
-};
+}
 
-const useIsMobile = (defaultValue?: boolean) => {
+function useIsMobile(defaultValue?: boolean): boolean {
   return useMaxWidth(MOBILE_MAX_WIDTH, defaultValue);
-};
+}
 
-const useIsSystemDarkTheme = (): boolean => {
+function useIsSystemDarkTheme(): boolean {
   return useMediaQuery("(prefers-color-scheme: dark)");
-};
+}
 
 export { useMinWidth, useMaxWidth, useIsMobile, useIsSystemDarkTheme };

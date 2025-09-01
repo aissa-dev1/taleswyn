@@ -6,11 +6,11 @@ import { useTaleReadStore } from "@/stores/tale-read";
 
 import { romanize } from "@/utils/romanize";
 
-interface Props {
+type Props = {
   contentIndex: number;
-}
+};
 
-const TaleContentHeading: React.FC<Props> = ({ contentIndex }) => {
+function TaleContentHeading({ contentIndex }: Props) {
   const contentNumeralsActive = useTaleReadStore(
     (s) => s.contentNumeralsActive
   );
@@ -18,7 +18,9 @@ const TaleContentHeading: React.FC<Props> = ({ contentIndex }) => {
     (s) => s.contentRomanNumeralsActive
   );
 
-  if (!contentNumeralsActive) return null;
+  if (!contentNumeralsActive) {
+    return null;
+  }
 
   return (
     <H3>
@@ -27,6 +29,6 @@ const TaleContentHeading: React.FC<Props> = ({ contentIndex }) => {
         : contentIndex + 1}
     </H3>
   );
-};
+}
 
 export { TaleContentHeading };

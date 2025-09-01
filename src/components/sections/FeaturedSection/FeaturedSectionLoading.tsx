@@ -1,15 +1,13 @@
 import { FeaturedContentSectionLoading } from "../FeaturedContentSection";
 import { FeaturedTalesSectionLoading } from "../FeaturedTalesSection";
 
-interface Props {}
-
-const FeaturedSectionLoading: React.FC<Props> = () => {
+function FeaturedSectionLoading() {
   return (
     <>
       <FeaturedTalesSectionLoading />
       <FeaturedContentSectionLoading />
     </>
   );
-};
+}
 
 export { FeaturedSectionLoading };

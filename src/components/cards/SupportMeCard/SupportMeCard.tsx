@@ -11,13 +11,13 @@ import { BuyMeCoffeButton } from "@/components/buttons";
 import { useSettingsStore } from "@/stores/settings";
 import { ClosableCard } from "@/components/ui/Card";
 
-interface Props {}
-
-const SupportMeCard: React.FC<Props> = () => {
+function SupportMeCard() {
   const showSupportMeCard = useSettingsStore((s) => s.showSupportMeCard);
   const setShowSupportMeCard = useSettingsStore((s) => s.setShowSupportMeCard);
 
-  if (!showSupportMeCard) return null;
+  if (!showSupportMeCard) {
+    return null;
+  }
 
   return (
     <ClosableCard
@@ -38,6 +38,6 @@ const SupportMeCard: React.FC<Props> = () => {
       </CardContent>
     </ClosableCard>
   );
-};
+}
 
 export { SupportMeCard };

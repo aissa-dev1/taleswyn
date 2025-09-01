@@ -12,10 +12,8 @@ const SupportMeCard = dynamic(
   }
 );
 
-interface Props {}
-
-const SupportMeCardLazy: React.FC<Props> = () => {
+function SupportMeCardLazy() {
   return <SupportMeCard />;
-};
+}
 
 export { SupportMeCardLazy };

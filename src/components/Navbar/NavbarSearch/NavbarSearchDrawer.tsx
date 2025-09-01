@@ -18,9 +18,7 @@ import {
 } from "@/components/ui/Drawer";
 import { NavbarSearchContent } from "./NavbarSearchContent";
 
-interface Props {}
-
-const NavbarSearchDrawer: React.FC<Props> = () => {
+function NavbarSearchDrawer() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -43,6 +41,6 @@ const NavbarSearchDrawer: React.FC<Props> = () => {
       </DrawerPortal>
     </Drawer>
   );
-};
+}
 
 export { NavbarSearchDrawer };

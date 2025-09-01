@@ -1,6 +1,6 @@
 import styles from "./TalePreferencesCard.module.scss";
 
-import { SettingsCard, SettingsCardItem } from "../../../cards/SettingsCard";
+import { SettingsCard, SettingsCardItem } from "@/components/cards";
 import {
   TaleContentBookmarkedCardSwitch,
   TaleContentFontSizeSelect,
@@ -8,9 +8,7 @@ import {
   TaleContentRomanNumeralsSwitch,
 } from "@/components/Tale";
 
-interface Props {}
-
-const TalePreferencesCard: React.FC<Props> = () => {
+function TalePreferencesCard() {
   return (
     <SettingsCard
       title="Tale Preferences"
@@ -39,6 +37,6 @@ const TalePreferencesCard: React.FC<Props> = () => {
       </SettingsCardItem>
     </SettingsCard>
   );
-};
+}
 
 export { TalePreferencesCard };

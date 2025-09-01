@@ -10,11 +10,11 @@ import { Tale, TaleType } from "@/components/Tale";
 import { Button } from "@/components/ui/Button";
 import { FeaturedTalesSectionCarousel } from "./FeaturedTalesSectionCarousel";
 
-interface Props {
+type Props = {
   tales: TaleType[];
-}
+};
 
-const FeaturedTalesSection: React.FC<Props> = ({ tales }) => {
+function FeaturedTalesSection({ tales }: Props) {
   return (
     <div className={styles.tales}>
       <H1 transform="capitalize" className={styles.headline}>
@@ -38,6 +38,6 @@ const FeaturedTalesSection: React.FC<Props> = ({ tales }) => {
       </Show>
     </div>
   );
-};
+}
 
 export { FeaturedTalesSection };

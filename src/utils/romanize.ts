@@ -23,6 +23,7 @@ function romanize(num: number): string {
       num -= ROMANIZE_LOOKUP[key];
     }
   }
+
   return roman;
 }
 

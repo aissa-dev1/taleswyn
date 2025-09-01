@@ -4,17 +4,17 @@ import { ComponentProps } from "react";
 
 import styles from "./Main.module.scss";
 
-interface Props extends ComponentProps<"main"> {
+type Props = ComponentProps<"main"> & {
   withPaddingTop?: boolean;
   withAnimation?: boolean;
-}
+};
 
-const Main: React.FC<Props> = ({
+function Main({
   className,
   withPaddingTop = true,
   withAnimation = true,
   ...rest
-}) => {
+}: Props) {
   return (
     <main
       className={clsx(
@@ -26,6 +26,6 @@ const Main: React.FC<Props> = ({
       {...rest}
     />
   );
-};
+}
 
 export { Main };

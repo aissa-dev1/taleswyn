@@ -2,23 +2,24 @@ import { ComponentProps } from "react";
 import clsx from "clsx";
 
 import styles from "./Card.module.scss";
+
 import { P, Span } from "../Typography";
 
 type CardVariant = "default" | "primary";
 
-interface CardProps extends ComponentProps<"div"> {
+type CardProps = ComponentProps<"div"> & {
   variant?: CardVariant;
   withPadding?: boolean;
   centered?: boolean;
-}
+};
 
-const Card: React.FC<CardProps> = ({
+function Card({
   className,
   variant = "default",
   withPadding = false,
   centered = false,
   ...rest
-}) => {
+}: CardProps) {
   return (
     <div
       className={clsx(
@@ -31,11 +32,11 @@ const Card: React.FC<CardProps> = ({
       {...rest}
     />
   );
-};
+}
 
-interface CardTitleProps extends ComponentProps<"span"> {}
+type CardTitleProps = ComponentProps<"span">;
 
-const CardTitle: React.FC<CardTitleProps> = ({ className, ...rest }) => {
+function CardTitle({ className, ...rest }: CardTitleProps) {
   return (
     <Span
       size="lg"
@@ -45,14 +46,11 @@ const CardTitle: React.FC<CardTitleProps> = ({ className, ...rest }) => {
       {...rest}
     />
   );
-};
+}
 
-interface CardDescriptionProps extends ComponentProps<"p"> {}
+type CardDescriptionProps = ComponentProps<"p">;
 
-const CardDescription: React.FC<CardDescriptionProps> = ({
-  className,
-  ...rest
-}) => {
+function CardDescription({ className, ...rest }: CardDescriptionProps) {
   return (
     <P
       variant="gray"
@@ -60,25 +58,25 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
       {...rest}
     />
   );
-};
+}
 
-interface CardHeaderProps extends ComponentProps<"div"> {}
+type CardHeaderProps = ComponentProps<"div">;
 
-const CardHeader: React.FC<CardHeaderProps> = ({ className, ...rest }) => {
+function CardHeader({ className, ...rest }: CardHeaderProps) {
   return <div className={clsx(styles.cardHeader, className)} {...rest} />;
-};
+}
 
-interface CardContentProps extends ComponentProps<"div"> {}
+type CardContentProps = ComponentProps<"div">;
 
-const CardContent: React.FC<CardContentProps> = ({ className, ...rest }) => {
+function CardContent({ className, ...rest }: CardContentProps) {
   return <div className={clsx(styles.cardContent, className)} {...rest} />;
-};
+}
 
-interface CardFooterProps extends ComponentProps<"div"> {}
+type CardFooterProps = ComponentProps<"div">;
 
-const CardFooter: React.FC<CardFooterProps> = ({ className, ...rest }) => {
+function CardFooter({ className, ...rest }: CardFooterProps) {
   return <div className={clsx(styles.cardFooter, className)} {...rest} />;
-};
+}
 
 export {
   Card,

@@ -21,9 +21,7 @@ import {
 
 import { navBarLinks } from "../Navbar";
 
-interface Props {}
-
-const NavbarDrawer: React.FC<Props> = () => {
+function NavbarDrawer() {
   const pathName = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -69,6 +67,6 @@ const NavbarDrawer: React.FC<Props> = () => {
       </DrawerPortal>
     </Drawer>
   );
-};
+}
 
 export { NavbarDrawer };

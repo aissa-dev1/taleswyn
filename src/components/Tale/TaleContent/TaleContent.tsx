@@ -12,23 +12,23 @@ type TaleContentType = {
   content: string[];
 };
 
-interface Props {
+type Props = {
   showHeaderTools?: boolean;
   showBookmarkButton?: boolean;
   taleId?: string;
   contentText: string;
   contentIndex: number;
   id?: string;
-}
+};
 
-const TaleContent: React.FC<Props> = ({
+function TaleContent({
   showHeaderTools = true,
   showBookmarkButton = true,
   taleId,
   contentIndex,
   contentText,
   id,
-}) => {
+}: Props) {
   return (
     <div className={styles.content} id={id}>
       <div className={styles.contentHeader}>
@@ -55,6 +55,6 @@ const TaleContent: React.FC<Props> = ({
       <Separator />
     </div>
   );
-};
+}
 
 export { TaleContent, type TaleContentType };

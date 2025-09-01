@@ -12,13 +12,13 @@ import { Main } from "@/components/Main";
 import { PAGINATION_DEFAULT_LIMIT } from "@/constants/filter";
 import { GetLibraryTalesQuery } from "@/lib/data/tale";
 
-interface Props {
+type Props = {
   searchParams: Promise<
     GetLibraryTalesQuery & {
       limit: number;
     }
   >;
-}
+};
 
 export default async function Library(props: Props) {
   const searchParams = await props.searchParams;

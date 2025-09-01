@@ -1,4 +1,4 @@
-export function downloadFile(url: string, filename: string) {
+function downloadFile(url: string, filename: string) {
   const link = document.createElement("a");
   link.href = url;
   link.setAttribute("download", filename || "download");
@@ -6,3 +6,5 @@ export function downloadFile(url: string, filename: string) {
   link.click();
   document.body.removeChild(link);
 }
+
+export { downloadFile };

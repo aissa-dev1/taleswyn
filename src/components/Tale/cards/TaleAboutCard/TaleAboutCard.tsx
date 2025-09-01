@@ -7,12 +7,12 @@ import { Show } from "@/components/Show";
 import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { P } from "@/components/ui/Typography";
 
-interface Props {
+type Props = {
   name: string;
   about: string[];
-}
+};
 
-const TaleAboutCard: React.FC<Props> = ({ name, about }) => {
+function TaleAboutCard({ name, about }: Props) {
   return (
     <Card>
       <CardHeader>
@@ -44,6 +44,6 @@ const TaleAboutCard: React.FC<Props> = ({ name, about }) => {
       </CardContent>
     </Card>
   );
-};
+}
 
 export { TaleAboutCard };

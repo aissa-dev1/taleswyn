@@ -7,15 +7,17 @@ export function applyDataKeyAndStyle(
 
   for (const dataItem in data) {
     css += `html[data-${key}="${dataItem}"] {`;
+
     for (const prop in data[dataItem]) {
       css += `--${prop}: ${data[dataItem][prop]};`;
     }
+
     css += `}`;
   }
 
   let styleTag = document.getElementById(styleTagId);
 
-  if (!styleTag) {
+  if (styleTag === null) {
     styleTag = document.createElement("style");
     styleTag.id = styleTagId;
     document.head.appendChild(styleTag);

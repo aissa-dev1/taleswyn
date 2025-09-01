@@ -15,11 +15,11 @@ const Carousel = dynamic(
   }
 );
 
-interface Props {
+type Props = {
   tales: TaleType[];
-}
+};
 
-const FeaturedTalesSectionCarousel: React.FC<Props> = ({ tales }) => {
+function FeaturedTalesSectionCarousel({ tales }: Props) {
   return (
     <Carousel>
       {tales.map((tale) => (
@@ -29,6 +29,6 @@ const FeaturedTalesSectionCarousel: React.FC<Props> = ({ tales }) => {
       ))}
     </Carousel>
   );
-};
+}
 
 export { FeaturedTalesSectionCarousel };

@@ -7,23 +7,23 @@ type BadgeVariant = "primary" | "secondary" | "page" | "inverse";
 
 type BadgeSize = "sm" | "md" | "lg";
 
-interface Props extends ComponentProps<"div"> {
+type Props = ComponentProps<"div"> & {
   variant?: BadgeVariant;
   size?: BadgeSize;
-}
+};
 
-const Badge: React.FC<Props> = ({
+function Badge({
   className,
   variant = "primary",
   size = "md",
   ...rest
-}) => {
+}: Props) {
   return (
     <div
       className={clsx(styles.badge, styles[variant], styles[size], className)}
       {...rest}
     />
   );
-};
+}
 
 export { Badge };

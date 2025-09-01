@@ -12,8 +12,6 @@ import { useToastStore } from "@/stores/toast";
 
 import { sendMail } from "@/lib/actions/send-mail";
 
-interface Props {}
-
 const FORM_STATE = {
   name: "",
   email: "",
@@ -22,7 +20,7 @@ const FORM_STATE = {
   pending: false,
 };
 
-const ContactForm: React.FC<Props> = () => {
+function ContactForm() {
   const [form, setForm] = useState(FORM_STATE);
   const addToast = useToastStore((s) => s.addToast);
 
@@ -34,7 +32,7 @@ const ContactForm: React.FC<Props> = () => {
   }
 
   async function handleSubmit() {
-    if (!form.email || !form.message) {
+    if (form.email.length <= 0 || form.message.length <= 0) {
       addToast({
         title: "Missing Information",
         description:
@@ -105,6 +103,6 @@ const ContactForm: React.FC<Props> = () => {
       </Button>
     </Form>
   );
-};
+}
 
 export { ContactForm };

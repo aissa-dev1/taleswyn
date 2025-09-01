@@ -1,19 +1,20 @@
 "use server";
 
-import { TaleType } from "@/components/Tale";
 import talesData from "@/data/tales.json";
 
-interface GetLibraryTalesQuery {
+import { TaleType } from "@/components/Tale";
+
+type GetLibraryTalesQuery = {
   skip: number;
   limit: number;
   q: string;
   genre: string;
-}
+};
 
-interface GetLibraryTalesResponse {
+type GetLibraryTalesResponse = {
   data: TaleType[];
   count: number;
-}
+};
 
 function getAllTales(): TaleType[] {
   return talesData as unknown as TaleType[];
@@ -55,14 +56,14 @@ function getLibraryTales(query: GetLibraryTalesQuery): GetLibraryTalesResponse {
   };
 }
 
-interface GetFeaturedTalesResponse {
+type GetFeaturedTalesResponse = {
   tales: TaleType[];
   content: {
     contentText: string[];
     taleName: string;
     taleSlug: string;
   };
-}
+};
 
 async function getFeaturedTales(): Promise<GetFeaturedTalesResponse> {
   const featuredTales = getAllTales().slice(0, 5);
@@ -83,7 +84,7 @@ async function getFeaturedTales(): Promise<GetFeaturedTalesResponse> {
 async function getTaleBySlug(slug: string): Promise<TaleType> {
   const tale = getAllTales().find((s) => s.slug === slug);
 
-  if (!tale) {
+  if (tale === undefined) {
     throw new Error("No tale found.");
   }
 

@@ -16,9 +16,9 @@ import { Main } from "@/components/Main";
 
 import { getAllTales, getTaleBySlug } from "@/lib/data/tale";
 
-interface Props {
+type Props = {
   params: Promise<{ slug: string }>;
-}
+};
 
 export async function generateStaticParams() {
   const tales = getAllTales();

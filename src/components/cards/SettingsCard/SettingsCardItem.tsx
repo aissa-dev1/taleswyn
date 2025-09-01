@@ -5,19 +5,19 @@ import styles from "./SettingsCard.module.scss";
 import { Label } from "@/components/ui/Label";
 import { Separator } from "@/components/ui/Separator";
 
-interface Props {
+type Props = {
   direction?: "col" | "row";
   label: string;
   labelHtmlFor?: string;
   children: React.ReactNode;
-}
+};
 
-const SettingsCardItem: React.FC<Props> = ({
+function SettingsCardItem({
   direction = "row",
   label,
   labelHtmlFor,
   children,
-}) => {
+}: Props) {
   return (
     <>
       <div
@@ -32,6 +32,6 @@ const SettingsCardItem: React.FC<Props> = ({
       <Separator className={styles.cardItemSeparator} />
     </>
   );
-};
+}
 
 export { SettingsCardItem };

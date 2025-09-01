@@ -15,19 +15,19 @@ type ButtonSize = "sm" | "md" | "lg" | "icon" | "full" | "responsive";
 
 type ButtonShape = "rounded" | "squared" | "circle";
 
-interface Props extends ComponentProps<"button"> {
+type Props = ComponentProps<"button"> & {
   variant?: ButtonVariant;
   size?: ButtonSize;
   shape?: ButtonShape;
-}
+};
 
-const Button: React.FC<Props> = ({
+function Button({
   className,
   variant = "primary",
   size = "md",
   shape = "rounded",
   ...rest
-}) => {
+}: Props) {
   return (
     <button
       className={clsx(
@@ -40,6 +40,6 @@ const Button: React.FC<Props> = ({
       {...rest}
     />
   );
-};
+}
 
 export { Button };

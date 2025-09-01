@@ -5,17 +5,17 @@ import styles from "./Callout.module.scss";
 import { P } from "../ui/Typography";
 import { Button } from "../ui/Button";
 
-interface Props {
+type Props = {
   message?: string;
   href?: string;
   buttonText?: string;
-}
+};
 
-const Callout: React.FC<Props> = ({
+function Callout({
   message = "Something went wrong!",
   href = "/",
   buttonText = "Back Home",
-}) => {
+}: Props) {
   return (
     <div className={styles.container}>
       <P size="xl">{message}</P>
@@ -24,6 +24,6 @@ const Callout: React.FC<Props> = ({
       </Link>
     </div>
   );
-};
+}
 
 export { Callout };

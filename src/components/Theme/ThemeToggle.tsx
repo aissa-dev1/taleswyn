@@ -7,9 +7,7 @@ import { Button } from "../ui/Button";
 
 import { useThemeStore } from "@/stores/theme";
 
-interface Props {}
-
-const ThemeToggle: React.FC<Props> = () => {
+function ThemeToggle() {
   const theme = useThemeStore((s) => s.theme);
   const setTheme = useThemeStore((s) => s.setTheme);
   const [systemThemeDark, setSystemThemeDark] = useState<boolean | null>(null);
@@ -17,7 +15,9 @@ const ThemeToggle: React.FC<Props> = () => {
   function handleToggleTheme() {
     if (theme === "system") {
       setTheme(systemThemeDark ? "light" : "dark");
-    } else setTheme(theme === "dark" ? "light" : "dark");
+    } else {
+      setTheme(theme === "dark" ? "light" : "dark");
+    }
   }
 
   useEffect(() => {
@@ -49,6 +49,6 @@ const ThemeToggle: React.FC<Props> = () => {
       )}
     </Button>
   );
-};
+}
 
 export { ThemeToggle };

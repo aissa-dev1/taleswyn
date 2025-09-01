@@ -5,24 +5,29 @@ import { persist } from "zustand/middleware";
 
 type Theme = "light" | "dark" | "system";
 
-interface StoreState {
+type StoreState = {
   theme: Theme;
   setTheme(theme: Theme): void;
-}
+};
 
-const getInitialTheme = (): Theme => {
-  if (typeof window === "undefined") return "system";
+function getInitialTheme(): Theme {
+  if (typeof window === "undefined") {
+    return "system";
+  }
 
   try {
     const stored = localStorage.getItem("theme_store");
-    if (!stored) return "system";
+
+    if (stored === null) {
+      return "system";
+    }
 
     const parsed = JSON.parse(stored);
     return parsed.state?.theme || "system";
   } catch (e) {
     return "system";
   }
-};
+}
 
 const useThemeStore = create(
   persist<StoreState>(

@@ -16,9 +16,9 @@ import { Button } from "../ui/Button";
 
 import { useToastStore } from "@/stores/toast";
 
-interface Props extends PropsWithChildren {}
+type Props = PropsWithChildren;
 
-const ToastProvider: React.FC<Props> = ({ children }) => {
+function ToastProvider({ children }: Props) {
   const toasts = useToastStore((s) => s.toasts);
   const removeToast = useToastStore((s) => s.removeToast);
 
@@ -55,6 +55,6 @@ const ToastProvider: React.FC<Props> = ({ children }) => {
       <ToastViewport />
     </Toast>
   );
-};
+}
 
 export { ToastProvider };

@@ -6,16 +6,16 @@ import styles from "./Skeleton.module.scss";
 
 type SkeletonType = "card" | "text" | "image" | "circle" | "button";
 
-interface SkeletonProps {
+type Props = {
   type?: SkeletonType;
   count?: number;
   width?: string | number;
   height?: string | number;
   className?: string;
   rounded?: boolean;
-}
+};
 
-const getDefaultHeight = (type: SkeletonType) => {
+function getDefaultHeight(type: SkeletonType) {
   switch (type) {
     case "card":
       return "200px";
@@ -30,16 +30,16 @@ const getDefaultHeight = (type: SkeletonType) => {
     default:
       return "1em";
   }
-};
+}
 
-const Skeleton: React.FC<SkeletonProps> = ({
+function Skeleton({
   type = "text",
   count = 1,
   width = "100%",
   height,
   className = "",
   rounded = false,
-}) => {
+}: Props) {
   const style = {
     width,
     height: height || getDefaultHeight(type),
@@ -56,6 +56,6 @@ const Skeleton: React.FC<SkeletonProps> = ({
   ));
 
   return <>{skeletons}</>;
-};
+}
 
 export { Skeleton };

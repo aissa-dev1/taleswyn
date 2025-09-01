@@ -4,17 +4,15 @@ import { useEffect, useRef } from "react";
 
 import styles from "./HeroCanvas.module.scss";
 
-interface Props {}
-
-interface Orb {
+type Orb = {
   x: number;
   y: number;
   size: number;
   fillStyle: string;
   speed: number;
-}
+};
 
-const HeroCanvas: React.FC<Props> = () => {
+function HeroCanvas() {
   const canvas = useRef<HTMLCanvasElement>(null!);
   const width = useRef<number>(null!);
   const height = useRef<number>(null!);
@@ -50,7 +48,9 @@ const HeroCanvas: React.FC<Props> = () => {
     }
 
     function update(time: number) {
-      if (!lastTime.current) lastTime.current = time;
+      if (lastTime.current === null) {
+        lastTime.current = time;
+      }
 
       const deltaTime = (time - lastTime.current) / 1000;
       lastTime.current = time;
@@ -68,7 +68,7 @@ const HeroCanvas: React.FC<Props> = () => {
     }
 
     function animate(time?: number) {
-      if (typeof time === "undefined") {
+      if (time === undefined) {
         animationId.current = requestAnimationFrame(animate);
         return;
       }
@@ -81,7 +81,7 @@ const HeroCanvas: React.FC<Props> = () => {
     function changeWidth(w: number) {
       width.current = w;
 
-      if (canvas.current) {
+      if (canvas.current !== null) {
         canvas.current.width = w;
       }
     }
@@ -89,7 +89,7 @@ const HeroCanvas: React.FC<Props> = () => {
     function changeHeight(h: number) {
       height.current = h;
 
-      if (canvas.current) {
+      if (canvas.current !== null) {
         canvas.current.height = h;
       }
     }
@@ -152,6 +152,6 @@ const HeroCanvas: React.FC<Props> = () => {
   }, []);
 
   return <canvas className={styles.canvas} ref={canvas} />;
-};
+}
 
 export { HeroCanvas };

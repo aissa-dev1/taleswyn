@@ -5,11 +5,11 @@ import styles from "./TaleBackButton.module.scss";
 
 import { Button } from "@/components/ui/Button";
 
-interface Props {
+type Props = {
   taleSlug: string | undefined;
-}
+};
 
-const TaleBackButton: React.FC<Props> = ({ taleSlug }) => {
+function TaleBackButton({ taleSlug }: Props) {
   return (
     <Link
       href={taleSlug ? `/t/${taleSlug}` : "/t"}
@@ -20,6 +20,6 @@ const TaleBackButton: React.FC<Props> = ({ taleSlug }) => {
       </Button>
     </Link>
   );
-};
+}
 
 export { TaleBackButton };

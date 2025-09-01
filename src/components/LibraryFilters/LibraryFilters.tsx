@@ -20,9 +20,7 @@ import { useSearchStore } from "@/stores/search";
 import { FILTER_DEFAULT_TIMEOUT } from "@/constants/filter";
 import { getTaleGenres } from "@/lib/data/tale";
 
-interface Props {}
-
-const LibraryFilters: React.FC<Props> = ({}) => {
+function LibraryFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const query = useSearchStore((s) => s.libraryQuery);
@@ -39,6 +37,7 @@ const LibraryFilters: React.FC<Props> = ({}) => {
 
   function handleQueryFilter(query: string) {
     clearTimeout(filterTimoutRef.current);
+
     filterTimoutRef.current = setTimeout(() => {
       if (query !== searchParams.get("q")) {
         updateSearchParams("q", query);
@@ -96,6 +95,6 @@ const LibraryFilters: React.FC<Props> = ({}) => {
       </div>
     </div>
   );
-};
+}
 
 export { LibraryFilters };

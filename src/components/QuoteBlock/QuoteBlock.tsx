@@ -1,22 +1,22 @@
 import styles from "./QuoteBlock.module.scss";
 
-interface Quote {
+type Quote = {
   id: string;
   quote: string;
   author?: string;
-}
+};
 
-interface QuoteBlockProps {
+type Props = {
   quote: Quote;
-}
+};
 
-const QuoteBlock: React.FC<QuoteBlockProps> = ({ quote }) => {
+function QuoteBlock({ quote }: Props) {
   return (
     <blockquote className={styles.quoteBlock}>
       <p className={styles.quoteText}>{quote.quote}</p>
       <footer className={styles.author}>— {quote?.author ?? "Unknown"}</footer>
     </blockquote>
   );
-};
+}
 
 export { QuoteBlock };

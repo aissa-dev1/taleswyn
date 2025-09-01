@@ -4,9 +4,9 @@ import { PropsWithChildren, useEffect } from "react";
 
 import { useThemeStore } from "@/stores/theme";
 
-interface Props extends PropsWithChildren {}
+type Props = PropsWithChildren;
 
-const ThemeProvider: React.FC<Props> = ({ children }) => {
+function ThemeProvider({ children }: Props) {
   const theme = useThemeStore((s) => s.theme);
 
   useEffect(() => {
@@ -14,6 +14,6 @@ const ThemeProvider: React.FC<Props> = ({ children }) => {
   }, [theme]);
 
   return <>{children}</>;
-};
+}
 
 export { ThemeProvider };

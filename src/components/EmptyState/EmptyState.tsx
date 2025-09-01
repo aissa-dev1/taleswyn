@@ -10,11 +10,11 @@ type Props = {
   position?: "start" | "center" | "end";
 };
 
-const EmptyState: React.FC<Props> = ({
+function EmptyState({
   message = "No items found.",
   icon,
   position = "center",
-}) => {
+}: Props) {
   return (
     <div className={clsx(styles.emptyState, styles[position])}>
       {icon && <div className={styles.icon}>{icon}</div>}
@@ -23,6 +23,6 @@ const EmptyState: React.FC<Props> = ({
       </P>
     </div>
   );
-};
+}
 
 export { EmptyState };

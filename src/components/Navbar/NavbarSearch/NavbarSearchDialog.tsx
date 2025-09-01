@@ -15,9 +15,7 @@ import {
 } from "../../ui/Dialog";
 import { NavbarSearchContent } from "./NavbarSearchContent";
 
-interface Props {}
-
-const NavbarSearchDialog: React.FC<Props> = () => {
+function NavbarSearchDialog() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -36,6 +34,6 @@ const NavbarSearchDialog: React.FC<Props> = () => {
       </DialogContent>
     </Dialog>
   );
-};
+}
 
 export { NavbarSearchDialog };

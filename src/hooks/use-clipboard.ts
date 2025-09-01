@@ -6,10 +6,10 @@ import { useToastStore } from "@/stores/toast";
 
 const CLIPBOARD_DURATION_MS = 2000;
 
-interface CopyTextOptions {
+type CopyTextOptions = {
   text: string;
   message?: string;
-}
+};
 
 function useClipboard() {
   const [copied, setCopied] = useState(false);
@@ -17,7 +17,9 @@ function useClipboard() {
   const clipboardTimout = useRef<NodeJS.Timeout>(null!);
 
   async function copyText(options: CopyTextOptions) {
-    if (copied) return;
+    if (copied) {
+      return;
+    }
 
     try {
       await navigator.clipboard.writeText(options.text);

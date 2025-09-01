@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "./TaleContentBookmarkedCard.module.scss";
+
 import {
   CardContent,
   CardDescription,
@@ -13,11 +15,11 @@ import { useTaleReadStore } from "@/stores/tale-read";
 
 import { scrollToElement } from "@/utils/scroll-to-element";
 
-interface Props {
+type Props = {
   taleId: string;
-}
+};
 
-const TaleContentBookmarkedCard: React.FC<Props> = ({ taleId }) => {
+function TaleContentBookmarkedCard({ taleId }: Props) {
   const bookmarkedContnetList = useTaleReadStore(
     (s) => s.bookmarkedContnetList
   );
@@ -31,10 +33,14 @@ const TaleContentBookmarkedCard: React.FC<Props> = ({ taleId }) => {
     (bc) => bc.taleId === taleId
   );
 
-  if (!bookmarkedContent) return null;
-
   function handleFocus() {
-    scrollToElement(`tale_content_${bookmarkedContent?.contentIndex}`);
+    if (bookmarkedContent !== undefined) {
+      scrollToElement(`tale_content_${bookmarkedContent.contentIndex}`);
+    }
+  }
+
+  if (bookmarkedContent === undefined) {
+    return null;
   }
 
   return (
@@ -45,7 +51,9 @@ const TaleContentBookmarkedCard: React.FC<Props> = ({ taleId }) => {
     >
       <CardHeader>
         <CardTitle>Bookmarked content</CardTitle>
-        <CardDescription>{bookmarkedContent.contentText}</CardDescription>
+        <CardDescription className={styles.cardDescription}>
+          {bookmarkedContent.contentText}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <Button size="sm" variant="inverse" onClick={handleFocus}>
@@ -54,6 +62,6 @@ const TaleContentBookmarkedCard: React.FC<Props> = ({ taleId }) => {
       </CardContent>
     </ClosableCard>
   );
-};
+}
 
 export { TaleContentBookmarkedCard };

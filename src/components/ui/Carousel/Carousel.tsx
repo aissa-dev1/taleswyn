@@ -8,10 +8,10 @@ import Autoplay from "embla-carousel-autoplay";
 
 import styles from "./Carousel.module.scss";
 
-interface Props extends PropsWithChildren {
+type Props = PropsWithChildren & {
   options?: EmblaOptionsType;
   plugins?: EmblaPluginType[];
-}
+};
 
 const CAROUSEL_DEFAULT_OPTIONS: EmblaOptionsType = {
   loop: true,
@@ -24,11 +24,11 @@ const CAROUSEL_DEFAULT_PLUGINS: EmblaPluginType[] = [
   Autoplay({ delay: 5000, stopOnInteraction: false }),
 ];
 
-const Carousel: React.FC<Props> = ({
+function Carousel({
   options = CAROUSEL_DEFAULT_OPTIONS,
   plugins = CAROUSEL_DEFAULT_PLUGINS,
   children,
-}) => {
+}: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins);
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
@@ -60,6 +60,6 @@ const Carousel: React.FC<Props> = ({
       )}
     </div>
   );
-};
+}
 
 export { Carousel };

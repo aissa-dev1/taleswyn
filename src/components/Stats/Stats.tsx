@@ -10,11 +10,11 @@ type StatType = {
   value: number | string;
 };
 
-interface Props {
+type Props = {
   list: StatType[];
-}
+};
 
-const Stats: React.FC<Props> = ({ list }) => {
+function Stats({ list }: Props) {
   return (
     <div className={styles.stats}>
       {list.map((stat, index) => (
@@ -25,6 +25,6 @@ const Stats: React.FC<Props> = ({ list }) => {
       ))}
     </div>
   );
-};
+}
 
 export { Stats };

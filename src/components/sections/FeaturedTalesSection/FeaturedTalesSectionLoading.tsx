@@ -3,9 +3,7 @@ import styles from "./FeaturedTalesSection.module.scss";
 import { H1 } from "@/components/ui/Typography";
 import { Skeleton } from "@/components/Skeleton";
 
-interface Props {}
-
-const FeaturedTalesSectionLoading: React.FC<Props> = () => {
+function FeaturedTalesSectionLoading() {
   return (
     <div className={styles.tales}>
       <H1 transform="capitalize" className={styles.headline}>
@@ -16,6 +14,6 @@ const FeaturedTalesSectionLoading: React.FC<Props> = () => {
       </div>
     </div>
   );
-};
+}
 
 export { FeaturedTalesSectionLoading };

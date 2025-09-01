@@ -4,20 +4,20 @@ import { create } from "zustand";
 
 type ToastVariant = "default" | "success" | "error" | "warning" | "info";
 
-interface Toast {
+type Toast = {
   id: string;
   title: string;
   description?: string;
   variant?: ToastVariant;
   duration?: number;
   action?: React.ReactNode;
-}
+};
 
-interface StoreState {
+type StoreState = {
   toasts: Toast[];
   addToast(toast: Omit<Toast, "id"> & { id?: string }): void;
   removeToast(toast: Pick<Toast, "id">): void;
-}
+};
 
 const useToastStore = create<StoreState>((set) => ({
   toasts: [],

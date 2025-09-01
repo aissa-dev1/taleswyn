@@ -8,9 +8,9 @@ import { P, ParagraphProps } from "@/components/ui/Typography";
 
 import { useTaleReadStore } from "@/stores/tale-read";
 
-interface Props extends ParagraphProps {}
+type Props = ParagraphProps;
 
-const TaleContentText: React.FC<Props> = ({ className, style, ...rest }) => {
+function TaleContentText({ className, style, ...rest }: Props) {
   const fontSize = useTaleReadStore((s) => s.fontSize);
 
   return (
@@ -20,6 +20,6 @@ const TaleContentText: React.FC<Props> = ({ className, style, ...rest }) => {
       {...rest}
     />
   );
-};
+}
 
 export { TaleContentText };

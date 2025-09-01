@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/Container";
 
 import { useToastStore } from "@/stores/toast";
 
-interface Props {
+type Props = {
   error: Error;
   reset?: () => void;
-}
+};
 
 export default function TalePageError(props: Props) {
   const addToast = useToastStore((s) => s.addToast);

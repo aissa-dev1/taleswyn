@@ -3,9 +3,7 @@ import { FeaturedTalesSection } from "../FeaturedTalesSection";
 
 import { getFeaturedTales } from "@/lib/data/tale";
 
-interface Props {}
-
-const FeaturedSection: React.FC<Props> = async () => {
+async function FeaturedSection() {
   const featuredTalesResponse = await getFeaturedTales();
 
   return (
@@ -14,6 +12,6 @@ const FeaturedSection: React.FC<Props> = async () => {
       <FeaturedContentSection content={featuredTalesResponse.content} />
     </>
   );
-};
+}
 
 export { FeaturedSection };

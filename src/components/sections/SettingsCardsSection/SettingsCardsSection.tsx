@@ -14,14 +14,12 @@ const TalePreferencesCard = dynamic(
   }
 );
 
-interface Props {}
-
-const SettingsCardsSection: React.FC<Props> = () => {
+function SettingsCardsSection() {
   return (
     <div className={styles.container}>
       <TalePreferencesCard />
     </div>
   );
-};
+}
 
 export { SettingsCardsSection };

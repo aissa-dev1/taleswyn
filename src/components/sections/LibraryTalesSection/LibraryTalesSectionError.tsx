@@ -2,10 +2,10 @@
 
 import { ErrorFallback, ErrorFallbackProps } from "@/components/ErrorFallback";
 
-interface Props extends ErrorFallbackProps {}
+type Props = ErrorFallbackProps;
 
-const LibraryTalesSectionError: React.FC<Props> = (props) => {
+function LibraryTalesSectionError(props: Props) {
   return <ErrorFallback {...props} />;
-};
+}
 
 export { LibraryTalesSectionError };

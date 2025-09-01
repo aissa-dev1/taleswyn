@@ -11,11 +11,11 @@ import { TaleContent } from "@/components/Tale";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
-interface Props {
+type Props = {
   content: { contentText: string[]; taleName: string; taleSlug: string };
-}
+};
 
-const FeaturedContentSection: React.FC<Props> = ({ content }) => {
+function FeaturedContentSection({ content }: Props) {
   return (
     <div className={styles.content}>
       <H1 transform="capitalize" className={styles.headline}>
@@ -56,6 +56,6 @@ const FeaturedContentSection: React.FC<Props> = ({ content }) => {
       </Show>
     </div>
   );
-};
+}
 
 export { FeaturedContentSection };

@@ -7,7 +7,7 @@ export function applyImportUrlAndStyle(data: string[], styleTagId: string) {
 
   let styleTag = document.getElementById(styleTagId);
 
-  if (!styleTag) {
+  if (styleTag === null) {
     styleTag = document.createElement("style");
     styleTag.id = styleTagId;
     document.head.appendChild(styleTag);

@@ -11,9 +11,7 @@ import {
 
 import { useTaleReadStore } from "@/stores/tale-read";
 
-interface Props {}
-
-const TaleContentFontSizeSelect: React.FC<Props> = () => {
+function TaleContentFontSizeSelect() {
   const fontSize = useTaleReadStore((s) => s.fontSize);
   const setFontSize = useTaleReadStore((s) => s.setFontSize);
 
@@ -34,6 +32,6 @@ const TaleContentFontSizeSelect: React.FC<Props> = () => {
       </SelectContent>
     </Select>
   );
-};
+}
 
 export { TaleContentFontSizeSelect };

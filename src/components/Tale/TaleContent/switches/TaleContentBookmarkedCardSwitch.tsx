@@ -4,9 +4,7 @@ import { Switch } from "@/components/ui/Switch";
 
 import { useTaleReadStore } from "@/stores/tale-read";
 
-interface Props {}
-
-const TaleContentBookmarkedCardSwitch: React.FC<Props> = () => {
+function TaleContentBookmarkedCardSwitch() {
   const bookmarkedContentCardActive = useTaleReadStore(
     (s) => s.bookmarkedContentCardActive
   );
@@ -21,6 +19,6 @@ const TaleContentBookmarkedCardSwitch: React.FC<Props> = () => {
       onCheckedChange={(v) => setBookmarkedContentCardActive(v)}
     />
   );
-};
+}
 
 export { TaleContentBookmarkedCardSwitch };

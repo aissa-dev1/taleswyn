@@ -3,19 +3,19 @@ import clsx from "clsx";
 
 import styles from "./Container.module.scss";
 
-interface ContainerProps extends ComponentProps<"div"> {
+type ContainerProps = ComponentProps<"div"> & {
   withPaddingBlock?: boolean;
   withContentSpacing?: boolean;
   spacing?: "none" | "lg" | "xl";
-}
+};
 
-const Container: React.FC<ContainerProps> = ({
+function Container({
   className,
   withPaddingBlock = false,
   withContentSpacing = false,
   spacing = "none",
   ...rest
-}) => {
+}: ContainerProps) {
   return (
     <div
       className={clsx(
@@ -28,6 +28,6 @@ const Container: React.FC<ContainerProps> = ({
       {...rest}
     />
   );
-};
+}
 
 export { Container, type ContainerProps };

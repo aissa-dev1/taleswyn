@@ -5,9 +5,9 @@ import styles from "./FeaturedSectionError.module.scss";
 import { ErrorFallback, ErrorFallbackProps } from "@/components/ErrorFallback";
 import { H1 } from "@/components/ui/Typography";
 
-interface Props extends ErrorFallbackProps {}
+type Props = ErrorFallbackProps;
 
-const FeaturedSectionError: React.FC<Props> = ({ error, reset }) => {
+function FeaturedSectionError({ error, reset }: Props) {
   return (
     <div className={styles.container}>
       <H1 transform="capitalize" className={styles.headline}>
@@ -16,6 +16,6 @@ const FeaturedSectionError: React.FC<Props> = ({ error, reset }) => {
       <ErrorFallback error={error} reset={reset} />
     </div>
   );
-};
+}
 
 export { FeaturedSectionError };

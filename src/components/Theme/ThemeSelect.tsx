@@ -11,9 +11,7 @@ import {
 
 import { useThemeStore } from "@/stores/theme";
 
-interface Props {}
-
-const ThemeSelect: React.FC<Props> = () => {
+function ThemeSelect() {
   const theme = useThemeStore((s) => s.theme);
   const setTheme = useThemeStore((s) => s.setTheme);
 
@@ -31,6 +29,6 @@ const ThemeSelect: React.FC<Props> = () => {
       </SelectContent>
     </Select>
   );
-};
+}
 
 export { ThemeSelect };
